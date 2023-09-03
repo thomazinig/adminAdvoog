@@ -280,6 +280,14 @@ main > p {
   flex-direction: row;
   gap: 23px;
 }
+.enviar-foto-destaque {
+  border-radius: 10px;
+  border: 1px dashed var(--Grey-07, #e3e3e3);
+  background: var(--White, #fff);
+  display: flex;
+  flex-direction: row;
+  gap: 23px;
+}
 
 .label-file {
   color: var(--Grey-04, #484854);
@@ -346,7 +354,12 @@ main > p {
   background: none;
   border: none;
 }
-.btn-fechar-logos{
+.btn-fechar-backgrund-destaque {
+  background: none;
+  border: none;
+  margin-right: -10px;
+}
+.btn-fechar-logos {
   margin-top: -53px;
   margin-right: -130px;
   margin-bottom: 22px;
@@ -356,6 +369,10 @@ main > p {
 .img-banner-exmp {
   width: 100%;
   margin-bottom: -120px;
+}
+.img-background-Destaque-exmp {
+  width: 100%;
+  margin-bottom: -140px;
 }
 /* toggle*/
 .switch {
@@ -421,11 +438,15 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+.logos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 .logos div {
   width: 137px;
   height: 108px;
-  margin-right: 20px;
-  margin-bottom: 20px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -453,6 +474,14 @@ input:checked + .slider:before {
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
+}
+.destaque {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
 @media (max-width: 600px) {
   nav {
