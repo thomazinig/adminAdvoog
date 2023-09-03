@@ -1,0 +1,362 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700&display=swap");
+
+a {
+  text-decoration: none;
+}
+body {
+  display: flex;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+  padding-left: 50px;
+  padding-right: 80px;
+  border-right: solid 1px #eceef9;
+}
+.nav-bloco-1 {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-top: 90px;
+  margin-bottom: 200px;
+}
+.nav-bloco-1 div {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.nav-bloco-1 a {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+}
+.nav-bloco-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin-bottom: 100px;
+  gap: 28px;
+}
+.nav-bloco-2 h5 {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.nav-bloco-2 a {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 500;
+}
+.nav-bloco-2 div {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.nav-bloco-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.nav-bloco-3 a {
+  color: var(--grey-01, #17171b);
+  font-family: "Inter";
+  font-size: 14px;
+  font-weight: 400;
+}
+.header-mobile {
+  display: none;
+}
+header {
+  height: 130px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border-bottom: solid 1px #eceef9;
+}
+
+.header-le {
+  margin-left: 30px;
+  margin-right: 180px;
+}
+.header-le input {
+  width: 270px;
+  border: none;
+  outline: 0;
+  margin-left: 15px;
+  color: #929292;
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.header-meio {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 22px;
+  margin-right: 100px;
+}
+.header-meio b {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.header-meio p {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 28px;
+}
+.header-ld {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.icon-notificacoes {
+  margin-left: 10px;
+}
+.img-perfil {
+  border-radius: 50px;
+  margin-left: 22px;
+}
+main {
+  margin-top: 30px;
+  margin-left: 30px;
+}
+
+.btn-fale-com-nosso-time {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-top: 40px;
+}
+.btn-fale-com-nosso-time button {
+  border: none;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  width: 209px;
+  height: 61.213px;
+  border-radius: 33.667px;
+  background: var(--azul-2, #22263b);
+  color: var(--white, #fff);
+  font-family: "Inter";
+  font-size: 13.117px;
+  font-weight: 600;
+}
+.faturas {
+  border-bottom: solid 3px #22263b;
+  padding-bottom: 20px;
+}
+.faturas h4 {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+}
+.faturas p {
+  margin-top: 0px;
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
+}
+.assinaturas {
+  border-bottom: solid 3px #22263b;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+}
+.assinaturas h4 {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 22px;
+  font-weight: 600;
+}
+.assinaturas p {
+  margin-top: 0px;
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 28px; /* 186.667% */
+}
+.fatura-aberta {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.renovacao {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.link-site {
+    color: var(--azul-2, #22263B);
+    font-family: Inter;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+.p-verde {
+  margin-top: 5px;
+  color: #25d366;
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+  margin-right: 17px;
+}
+.p-vermelho {
+  margin-top: 5px;
+  color: #d32525;
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+}
+.p-azul {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 13px;
+  font-weight: 500;
+}
+.b-azul {
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.p-cinza {
+  margin-bottom: 5px;
+  color: #ababab;
+  font-family: "Inter";
+  font-size: 10px;
+  font-weight: 500;
+}
+.fatura-aberta h5 {
+  margin: 0px;
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.fatura-recusada {
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-top: solid 1px #eceef9;
+  border-bottom: solid 1px #eceef9;
+}
+
+.fatura-recusada h5 {
+  margin: 0px;
+  color: var(--azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 16px;
+  font-weight: 600;
+}
+.plano-premium-seta{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.assinatura{
+    padding-bottom: 10px;
+    border-bottom: solid 1px #ECEEF9;
+}
+@media (max-width: 600px) {
+  nav {
+    display: none;
+  }
+  header {
+    display: none;
+  }
+  .header-mobile {
+    margin-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: solid 1px #eceef9;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .offcanvas-start {
+    width: 80% !important;
+  }
+  .offcanvas-end {
+    width: 80% !important;
+  }
+  .button-mobile {
+    border: 0px;
+    background-color: #fff;
+  }
+  .img-perfil {
+    width: 50%;
+    border: #000000 solid 1px;
+  }
+  #button-menu {
+    width: 20px;
+    height: auto;
+  }
+  .nav-bloco-1 {
+    gap: 20px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+  }
+  .nav-bloco-1 div {
+    gap: 10px;
+  }
+  .nav-bloco-1 img {
+    width: 10px;
+    height: 10px;
+  }
+  .logoPagina {
+    width: 50%;
+    height: auto;
+  }
+  .nav-bloco-2 {
+    margin-bottom: 100px;
+    gap: 28px;
+  }
+
+  .nav-bloco-2 div {
+    align-items: center;
+  }
+  body {
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  main {
+    margin-left: 10px;
+  }
+  .ld-body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .btn-fale-com-nosso-time {
+    align-items: center;
+    margin-top: 70px;
+  }
+}

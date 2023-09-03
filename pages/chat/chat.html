@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advoog</title>
+    <link rel="stylesheet" href="./chat.css">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.min.js"
+        integrity="sha384-Rx+T1VzGupg4BHQYs2gCW9It+akI2MM/mndMCy36UVfodzcJcF0GGLxZIzObiEfa"
+        crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+</head>
+
+<body>
+    <nav>
+        <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog" width="148" height="32.336">
+
+        <div class="nav-bloco-1">
+            <div>
+                <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15" height="14">
+                <a>Dashboard</a>
+            </div>
+            <div>
+                <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
+                <a>Páginas</a>
+            </div>
+            <div>
+                <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
+                <a>Pagamentos</a>
+            </div>
+        </div>
+        <div class="nav-bloco-2">
+            <h5>Integrações</h5>
+            <div>
+                <img src="../../assets/ic_analytics 1.png" alt="">
+                <a>Google Analitycs</a>
+            </div>
+            <div>
+                <img src="../../assets/iconMeta.png" alt="">
+                <a>Business Manager</a>
+            </div>
+            <div>
+                <img src="../../assets/iconWhatsApp.png" alt="">
+                <a>WhatsApp</a>
+            </div>
+            <div>
+                <img src="../../assets/iconEmail.png" alt="">
+                <a>E-mail</a>
+            </div>
+        </div>
+        <div class="nav-bloco-3">
+            <a>Minha Conta</a>
+            <a>Suporte</a>
+            <a>Sair</a>
+
+        </div>
+    </nav>
+    <div class="ld-body">
+        <div class="header-mobile">
+            <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                aria-controls="staticBackdrop">
+                <img id="button-menu" src="../../assets/justify.svg" alt="">
+            </button>
+
+            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                aria-labelledby="staticBackdropLabel">
+                <div class="offcanvas-header">
+                    <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog">
+                    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <div>
+
+
+                        <div class="nav-bloco-1">
+                            <div>
+                                <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15" height="14">
+                                <a>Dashboard</a>
+                            </div>
+                            <div>
+                                <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
+                                <a>Páginas</a>
+                            </div>
+                            <div>
+                                <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
+                                <a>Pagamentos</a>
+                            </div>
+                        </div>
+                        <div class="nav-bloco-2">
+                            <h5>Integrações</h5>
+                            <div>
+                                <img src="../../assets/ic_analytics 1.png" alt="">
+                                <a>Google Analitycs</a>
+                            </div>
+                            <div>
+                                <img src="../../assets/iconMeta.png" alt="">
+                                <a>Business Manager</a>
+                            </div>
+                            <div>
+                                <img src="../../assets/iconWhatsApp.png" alt="">
+                                <a>WhatsApp</a>
+                            </div>
+                            <div>
+                                <img src="../../assets/iconEmail.png" alt="">
+                                <a>E-mail</a>
+                            </div>
+                        </div>
+                        <div class="nav-bloco-3">
+                            <a>Minha Conta</a>
+                            <a>Suporte</a>
+                            <a>Sair</a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                aria-controls="offcanvasRight"> <img class="img-perfil" src="../../assets/imgHeader.png"
+                    alt="imgHeader">
+            </button>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                aria-labelledby="offcanvasRightLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    ...
+                </div>
+            </div>
+        </div>
+        <header>
+            <div class="header-le">
+                <img src="../../assets/iconLupa.png" alt="iconLupa" width="15" height="15">
+                <input type="text" placeholder="Pesquise por páginas, pagamentos...">
+            </div>
+
+
+            <div class="header-ld">
+                <div class="header-criar-pagina">
+                    <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="14" height="14">
+
+                    <p>
+                        <b>Criar Página</b> <br>
+                        Comece uma nova página
+                    </p>
+                </div>
+               <a href="../chat/chat.html"><img class="icon-chat" src="../../assets/iconChat.png" alt="iconChat"></a> 
+                <img class="icon-notificacoes" src="../../assets/iconNotificacoes.png" alt="iconNotificacoes">
+                <img class="img-perfil" src="../../assets/imgHeader.png" alt="imgHeader">
+            </div>
+        </header>
+        <main >
+            <div></div>
+            <div></div>
+        </main>
+    </div>
+</body>
+
+</html>
