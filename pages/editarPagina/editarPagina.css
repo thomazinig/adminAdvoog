@@ -87,6 +87,9 @@ header {
   border-bottom: solid 1px #eceef9;
   padding-right: 10px;
 }
+.ld-body {
+  width: 100%;
+}
 
 .header-le {
   margin-left: 30px;
@@ -160,7 +163,6 @@ main > p {
 }
 .editar-pagina {
   display: flex;
-  flex-direction: column;
   gap: 70px;
 }
 .editar-pagina b {
@@ -213,6 +215,22 @@ main > p {
   background-color: white;
   color: var(--Azul-2, #22263b);
 }
+.pagina-editada-button-azul-adicionar-membro {
+  border: 1px solid #22263b;
+  padding: 12px 23px;
+  border-radius: 6px;
+  background: var(--Azul-2, #22263b);
+  color: #fff;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.pagina-editada-button-azul-adicionar-membro:hover {
+  background-color: white;
+  color: var(--Azul-2, #22263b);
+}
 
 .editar-pagina p {
   color: #717171;
@@ -256,6 +274,7 @@ main > p {
   line-height: normal;
 }
 .color-div {
+  width: 100%;
   padding: 12px 15px;
   border-radius: 9px;
   border: 2px solid var(--White-Blue, #f6f6fa);
@@ -483,6 +502,236 @@ input:checked + .slider:before {
   font-weight: 600;
   line-height: normal;
 }
+.mostar-time {
+  gap: 20px;
+}
+.fechar-img-time {
+  background: none;
+  border: none;
+  margin-left: -19px;
+  margin-top: -10px;
+}
+.card-time {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card-time h5 {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 10.612px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px; /* 156.25% */
+}
+.card-time p {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.581px; /* 178.571% */
+}
+.card-time a {
+  text-decoration: none;
+  width: 100px;
+  border-radius: 2px;
+  border: 2px solid var(--White-Blue, #f6f6fa);
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px 0px 4px 10px;
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px;
+}
+.card-time button {
+  background: none;
+  border: none;
+  margin-top: -210px;
+  margin-bottom: 201px;
+  margin-right: -185px;
+}
+.label-depoimentos {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.card-depoimentos {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+}
+.card-depoimentos h5 {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 10.612px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px; /* 156.25% */
+}
+.card-depoimentos p {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 16.581px; /* 178.571% */
+}
+.card-depoimentos a {
+  text-decoration: none;
+  width: 70px;
+  border-radius: 2px;
+  border: 2px solid var(--White-Blue, #f6f6fa);
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px 0px 4px 10px;
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px;
+}
+.card-depoimentos button {
+  background: none;
+  border: none;
+  margin-top: -210px;
+  margin-bottom: 201px;
+  margin-right: -185px;
+}
+.pagina-editada-button-azul-area-atuacao {
+  display: flex;
+  align-items: start;
+  border: 1px solid #22263b;
+  padding: 12px 23px;
+  border-radius: 6px;
+  background: var(--Azul-2, #22263b);
+  color: #fff;
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.pagina-editada-button-azul-area-atuacao:hover {
+  background-color: white;
+  color: var(--Azul-2, #22263b);
+}
+.card-area-atuacao {
+  padding-bottom: 33px;
+  width: 362px;
+  padding-top: 55px;
+  padding-left: 40px;
+  padding-right: 40px;
+  border-radius: 20px;
+  border: 3px solid var(--White-Blue, #f6f6fa);
+}
+.card-area-atuacao h2 {
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.card-area-atuacao p {
+  margin-top: 24px;
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 25px; /* 178.571% */
+}
+.card-area-atuacao a {
+  text-decoration: none;
+  width: 70px;
+  border-radius: 2px;
+  border: 2px solid var(--White-Blue, #f6f6fa);
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px 0px 4px 10px;
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px;
+}
+.btn-fechar-areas-atuacao-card {
+  display: flex;
+  border: none;
+  background: none;
+  margin-top: -64px;
+  margin-left: 297px;
+  margin-bottom: 40px;
+}
+.btn-todas-areas-atuacao {
+  border-radius: 2px;
+  border: 2px solid var(--White-Blue, #f6f6fa);
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+  padding: 4px 4px 4px 10px;
+  color: var(--Azul-2, #22263b);
+  font-family: "Inter";
+  font-size: 9.285px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 16.581px;
+}
+.editar-todas-areas-atuacao {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px #f6f6fa;
+}
+.editar-todas-areas-atuacao p{
+  color: var(--Azul-2, #22263B);
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.editar-todas-areas-atuacao-ultimo {
+  padding: 30px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  border-top: solid 1px #f6f6fa;
+  border-bottom: solid 1px #f6f6fa;
+
+}
+.editar-todas-areas-atuacao-ultimo p{
+  color: var(--Azul-2, #22263B);
+  font-family: "Inter";
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+.btn-fechar-icon-servico{
+border: none;
+background: none;
+margin-left: -20px;
+}
 @media (max-width: 600px) {
   nav {
     display: none;
@@ -552,10 +801,16 @@ input:checked + .slider:before {
     margin-left: 10px;
     padding: 10px;
   }
-
+  
+.card-area-atuacao{
+  width: 280px;
+}
   .ld-body {
     width: 100%;
     margin: 0px;
     padding: 0px;
+  }
+  .btn-fechar-backgrund{
+    margin-bottom: -100px;
   }
 }
