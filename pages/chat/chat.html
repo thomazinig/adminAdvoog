@@ -16,7 +16,7 @@
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container">
     <nav>
         <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog" width="148" height="32.336">
 
@@ -151,14 +151,165 @@
                         Comece uma nova página
                     </p>
                 </div>
-               <a href="../chat/chat.html"><img class="icon-chat" src="../../assets/iconChat.png" alt="iconChat"></a> 
+                <a href="../chat/chat.html"><img class="icon-chat" src="../../assets/iconChat.png" alt="iconChat"></a>
                 <img class="icon-notificacoes" src="../../assets/iconNotificacoes.png" alt="iconNotificacoes">
                 <img class="img-perfil" src="../../assets/imgHeader.png" alt="imgHeader">
             </div>
         </header>
-        <main >
-            <div></div>
-            <div></div>
+        <main class="row">
+            <div class="col-lg-5 mensagens">
+                <div class="todas-mensagens ps-3">
+                    <h3>
+                        todas as mensagens
+                    </h3>
+                    <button class="setaPraBaixo">
+                        <img src="../../assets/setaPraBaixo.svg" alt="seta para baixo">
+
+                    </button>
+                </div>
+                <div class="criar-ticket ps-3">
+                    <h4>Criar Novo Ticket</h4>
+                    <p>Está enfrentando problemas? Crie um novo ticket</p>
+                </div>
+                <div class="">
+                    <div class="mensagem-lida ">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <p class="horario">10:58</p>
+                        </div>
+                    </div>
+                    <div class="mensagem-lida">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <p class="horario">10:58</p>
+                        </div>
+                    </div>
+                    <div class="mensagem-nao-lida">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <div class="horario-e-notificacao">
+                                <p class="horario">10:58</p>
+                                <div class="nao-lido">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mensagem-lida">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <p class="horario">10:58</p>
+                        </div>
+                    </div>
+                    <div class="mensagem-nao-lida">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <div class="horario-e-notificacao">
+                                <p class="horario">10:58</p>
+                                <div class="nao-lido">1</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mensagem-nao-lida">
+                        <div class="header-chat ps-3 pe-3">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="usuario-sem-foto">
+                                    <div class="online"></div>
+                                </div>
+                                <div class="nome-status">
+                                    <h3>Italo Eduardo</h3>
+                                    <p>OOlá, preciso de uma ajuda</p>
+                                </div>
+                            </div>
+                            <div class="horario-e-notificacao">
+                                <p class="horario">10:58</p>
+                                <div class="nao-lido">1</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="header-chat">
+                    <div class="d-flex flex-row mt-4">
+                        <div class="usuario-sem-foto">
+                            <div class="online"></div>
+                        </div>
+                        <div class="nome-status">
+                            <h3>Italo Eduardo</h3>
+                            <p>Online</p>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <button class="btns-header me-2"><img src="../../assets/lupa.svg" alt="lupa"></button>
+                        <button class="btns-header"><img src="../../assets/3pontinhos.svg" alt="3pontos"></button>
+                    </div>
+                </div>
+                <div class="body-chat">
+                    <div class="mensagem-enviada">
+                        <div>
+                            <p>Seja Bem-vindo ao suporte, como podemos ajudar você hoje?</p>
+                            <div>
+                                <p class="horarioMensagemEnviada">10:56</p>
+                                <img src="../../assets/visto.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mensagem-recebida">
+                        <div>
+                            <p>Olá, preciso de uma ajuda</p>
+                            <div>
+                                <p class="horarioMensagemRecebida">10:56</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="enviar-mensagem">
+                    <input type="text" placeholder="Digite sua mensagem aqui">
+                    <button>
+                        <img src="../../assets/enviar.svg" alt="">
+                    </button>
+                </div>
+            </div>
         </main>
     </div>
 </body>

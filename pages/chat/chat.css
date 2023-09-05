@@ -141,7 +141,250 @@ main {
   margin-left: 30px;
   padding-right: 10px;
 }
+.todas-mensagens {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 4px;
+}
+.todas-mensagens h3 {
+  color: #222;
+  font-family: "Inter";
+  font-size: 19.331px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.775px; /* 133.333% */
+}
+.setaPraBaixo {
+  background: none;
+  border: none;
+}
+.mensagens {
+  padding-right: 0px !important;
+  border-right: solid 1px #eceef9;
+}
+.horario {
+  margin: 0px;
+  padding: 0px;
+  color: #888;
+  text-align: center;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.035px; /* 125.293% */
+}
+.criar-ticket {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  justify-content: center;
+  background: var(--Azul-Claro, #f7f8ff);
+  display: flex;
+  flex-direction: column;
+}
+.criar-ticket h4 {
+  color: var(--Blue, #036efa);
+  font-family: "Inter";
+  font-size: 17.183px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.criar-ticket p {
+  color: #888;
+  font-family: "Inter";
+  font-size: 12.887px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.035px; /* 116.667% */
+}
+.header-chat {
+  padding-bottom: 8px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #eceef9;
+}
+.nao-lido {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 25.775px;
+  width: 25.775px;
+  height: 25.775px;
+  background: var(--Blue, #036efa);
+  color: #FFF;
+font-family: "Inter";
+font-size: 10.739px;
+font-style: normal;
+font-weight: 400;
+line-height: 12.887px; /* 120% */
+}
+.horario-e-notificacao{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+}
+.usuario-sem-foto {
+  margin-right: 10px;
+  width: 52.167px;
+  height: 52.167px;
+  border-radius: 52.167px;
+  background: #c4c4c4;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+.online {
+  border-radius: 10.868px;
+  border: 1.087px solid #fff;
+  background: var(--Blue, #036efa);
+  width: 10.868px;
+  height: 10.868px;
+  flex-shrink: 0;
+}
+.nome-status {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+.nome-status h3 {
+  color: #222;
+  font-family: "Inter";
+  font-size: 17.389px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.nome-status p {
+  color: #888;
+  font-family: "Inter";
+  font-size: 13.042px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.215px; /* 116.667% */
+}
 
+.btns-header {
+  background: none;
+  border: none;
+}
+
+.body-chat {
+  margin-bottom: 400px;
+}
+.mensagem-enviada {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+.mensagem-enviada p {
+  color: #fff;
+  font-family: "Inter";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin: 0px;
+  padding: 0px;
+}
+.mensagem-enviada div {
+  background: var(--Blue, #036efa);
+  border-radius: 8.592px 0px 8.592px 8.592px;
+  padding: 10px;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+}
+.mensagem-enviada div > div {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+}
+.mensagem-recebida {
+  width: 100%;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.mensagem-recebida p {
+  color: #666;
+  font-family: "Inter";
+  font-size: 15.035px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.mensagem-recebida div {
+  border-radius: 0px 8.592px 8.592px 8.592px;
+  background: #f2f2f2;
+  padding: 10px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+.mensagem-recebida div > div {
+  margin-left: 0px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: start;
+}
+.horarioMensagemEnviada {
+  margin: 0px;
+  padding: 0px;
+  color: #fff;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.035px; /* 125.293% */
+}
+.horarioMensagemRecebida {
+  margin: 0px;
+  padding: 0px;
+  color: #888;
+  font-family: "Inter";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15.035px; /* 125.293% */
+}
+.enviar-mensagem {
+  width: 100%;
+  padding: 15.035px 19.225px 15.19px 17.182px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-radius: 8.592px;
+  background: var(--Grey-09, #f9f9f9);
+}
+.enviar-mensagem input {
+  width: 90%;
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+.enviar-mensagem button {
+  background: none;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
 @media (max-width: 600px) {
   nav {
     display: none;
