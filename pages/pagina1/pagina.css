@@ -20,14 +20,9 @@ nav {
   flex-direction: column;
   gap: 40px;
   margin-top: 90px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
-.nav-bloco-1 div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-}
+
 .nav-bloco-1 a {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
@@ -79,10 +74,12 @@ header {
   align-items: center;
   border-bottom: solid 1px #eceef9;
 }
+.sugestoes:hover{
+  color: rgb(28, 92, 189);
 
+}
 .header-le {
-  margin-left: 30px;
-  margin-right: 180px;
+  padding-left: 30px;
 }
 .header-le input {
   width: 270px;
@@ -116,16 +113,18 @@ header {
   line-height: 28px;
 }
 .header-ld {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
 }
 .icon-notificacoes {
   margin-left: 10px;
 }
 .img-perfil {
   border-radius: 50px;
-  margin-left: 22px;
 }
 main {
   padding: 70px;
@@ -247,11 +246,16 @@ main > h3 {
 }
 .criar-pagina {
   height: 100px;
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-bottom: solid 1px #eceef9;
+  flex-wrap: wrap;
+  align-content: center;
+  width: 100%;
+  padding: 1.5em 1em 1.5em 0em;
+  transition: ease-in-out 0.3s;
 }
 .criar-pagina b {
   color: var(--azul-2, #22263b);
@@ -268,11 +272,12 @@ main > h3 {
   line-height: 28px;
 }
 .pagina-ativa {
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em 1em 1.5em 0em;
+  transition: ease-in-out 0.3s;
 }
 .pagina-ativa b {
   color: #25d366;
@@ -297,11 +302,12 @@ main > h3 {
   font-weight: 600;
 }
 .fatura-aberta {
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  padding: 1.5em 1em 1.5em 0em;
+  transition: ease-in-out 0.3s;
 }
 .p-verde {
   margin-top: 5px;
@@ -351,13 +357,14 @@ main > h3 {
   gap: 10px;
 }
 .pagina-nao-configurada {
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: solid 1px #eceef9;
   border-bottom: solid 1px #eceef9;
+  padding: 1.5em 1em 1.5em 0em;
+  transition: ease-in-out 0.3s;
 }
 .pagina-nao-configurada-div {
   display: flex;
@@ -366,7 +373,6 @@ main > h3 {
   gap: 10px;
 }
 .pagina-nao-configurada h5 {
- 
   margin: 0px;
   color: var(--azul-2, #22263b);
   font-family: "Inter";
@@ -382,13 +388,14 @@ main > h3 {
   font-weight: 500;
 }
 .fatura-recusada {
-  height: 120px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   border-top: solid 1px #eceef9;
   border-bottom: solid 1px #eceef9;
+  padding: 1.5em 1em 1.5em 0em;
+  transition: ease-in-out 0.3s;
 }
 
 .fatura-recusada h5 {
@@ -399,9 +406,13 @@ main > h3 {
   font-weight: 600;
 }
 
-.btn-fale-com-nosso-time {
-  align-items: center;
-  margin-top: 70px;
+.criar-pagina:hover,
+.pagina-ativa:hover,
+.fatura-aberta:hover,
+.fatura-recusada:hover,
+.pagina-nao-configurada:hover {
+  background: #eee;
+  padding-left: 1em;
 }
 @media (max-width: 600px) {
   nav {

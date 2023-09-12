@@ -78,10 +78,12 @@ header {
   align-items: center;
   border-bottom: solid 1px #eceef9;
 }
+.sugestoes:hover{
+  color: rgb(28, 92, 189);
 
+}
 .header-le {
-  margin-left: 30px;
-  margin-right: 180px;
+  padding-left: 30px;
 }
 .header-le input {
   width: 270px;
@@ -115,16 +117,16 @@ header {
   line-height: 28px;
 }
 .header-ld {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
 }
-.icon-notificacoes {
-  margin-left: 10px;
-}
+
 .img-perfil {
   border-radius: 50px;
-  margin-left: 22px;
 }
 main {
   margin-top: 30px;
@@ -132,14 +134,15 @@ main {
 }
 
 .btn-fale-com-nosso-time {
+  
   display: flex;
   flex-direction: column;
   align-items: flex-end;
   margin-top: 40px;
 }
 .btn-fale-com-nosso-time button {
-  border: none;
-
+  border: solid 2px #fff;
+  transition: ease-in-out 0.3s;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -176,6 +179,7 @@ main {
   border-bottom: solid 3px #22263b;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  
 }
 .assinaturas h4 {
   color: var(--azul-2, #22263b);
@@ -197,6 +201,8 @@ main {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  transition: ease-in-out 0.3s;
+
 }
 .renovacao {
   color: var(--azul-2, #22263b);
@@ -263,6 +269,7 @@ main {
   align-items: center;
   border-top: solid 1px #eceef9;
   border-bottom: solid 1px #eceef9;
+  transition: ease-in-out 0.3s;
 }
 
 .fatura-recusada h5 {
@@ -281,6 +288,20 @@ main {
 .assinatura{
     padding-bottom: 10px;
     border-bottom: solid 1px #ECEEF9;
+    transition: ease-in-out 0.3s;
+
+}
+.assinatura:hover,
+.fatura-recusada:hover,
+.fatura-aberta:hover {
+  background: #eee;
+  padding-left: 1em;
+}
+.btn-fale-com-nosso-time button:hover{
+  border: solid 3px #22263b;
+
+  background: var(--white);
+  color:var(--azul-2, #22263b);
 }
 @media (max-width: 600px) {
   nav {

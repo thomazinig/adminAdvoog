@@ -14,19 +14,15 @@ nav {
   padding-right: 80px;
   border-right: solid 1px #eceef9;
 }
+
 .nav-bloco-1 {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-top: 90px;
-  margin-bottom: 200px;
+  margin-bottom: 150px;
 }
-.nav-bloco-1 div {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 16px;
-}
+
 .nav-bloco-1 a {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
@@ -39,10 +35,6 @@ nav {
   gap: 7px;
   margin-bottom: 100px;
   gap: 28px;
-}
-.nav-bloco-2 img {
-  width: 17px;
-  height: 17px;
 }
 .nav-bloco-2 h5 {
   color: var(--azul-2, #22263b);
@@ -59,7 +51,6 @@ nav {
 .nav-bloco-2 div {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
 }
 .nav-bloco-3 {
@@ -80,16 +71,15 @@ header {
   height: 130px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   border-bottom: solid 1px #eceef9;
-  padding-right: 10px;
 }
+.sugestoes:hover{
+  color: rgb(28, 92, 189);
 
+}
 .header-le {
-  margin-left: 30px;
-  margin-right: 180px;
+  padding-left: 30px;
 }
 .header-le input {
   width: 270px;
@@ -102,21 +92,20 @@ header {
   font-weight: 400;
 }
 
-.header-criar-pagina {
+.header-meio {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 22px;
   margin-right: 100px;
 }
-.header-criar-pagina b {
+.header-meio b {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
   font-size: 16px;
   font-weight: 600;
 }
-.header-criar-pagina p {
-  margin: 0px;
+.header-meio p {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
   font-size: 13px;
@@ -124,27 +113,28 @@ header {
   line-height: 28px;
 }
 .header-ld {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
 }
-.icon-notificacoes {
-  margin-left: 10px;
-}
+
 .img-perfil {
   border-radius: 50px;
-  margin-left: 22px;
+}
+main {
+  margin-top: 30px;
+  margin-left: 30px;
+  padding-right: 50px;
 }
 .img-perfil-editar {
   border-radius: 50px;
   width: 62px;
   margin-bottom: 45px;
 }
-main {
-  margin-top: 30px;
-  margin-left: 30px;
-  padding-right: 10px;
-}
+
 .minha-conta h1 {
   color: var(--azul-2, #22263b);
   font-family: "Inter";

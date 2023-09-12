@@ -157,6 +157,7 @@ main {
   font-weight: 400;
 }
 .criar-pagina {
+  height: 100px;
   display: inline-flex;
   flex-direction: row;
   justify-content: space-between;
