@@ -3,7 +3,6 @@
 a {
   text-decoration: none;
 }
-
 body {
   display: flex;
 }
@@ -15,6 +14,7 @@ nav {
   padding-right: 80px;
   border-right: solid 1px #eceef9;
 }
+
 .nav-bloco-1 {
   display: flex;
   flex-direction: column;
@@ -41,10 +41,6 @@ nav {
   margin-bottom: 100px;
   gap: 28px;
 }
-.nav-bloco-2 img {
-  width: 17px;
-  height: 17px;
-}
 .nav-bloco-2 h5 {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
@@ -60,7 +56,6 @@ nav {
 .nav-bloco-2 div {
   display: flex;
   flex-direction: row;
-  align-items: center;
   gap: 10px;
 }
 .nav-bloco-3 {
@@ -81,19 +76,12 @@ header {
   height: 130px;
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   align-items: center;
-  justify-content: space-between;
   border-bottom: solid 1px #eceef9;
-  padding-right: 10px;
-}
-.ld-body {
-  width: 100%;
 }
 
 .header-le {
-  margin-left: 30px;
-  margin-right: 180px;
+  padding-left: 30px;
 }
 .header-le input {
   width: 270px;
@@ -106,21 +94,20 @@ header {
   font-weight: 400;
 }
 
-.header-criar-pagina {
+.header-meio {
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 22px;
   margin-right: 100px;
 }
-.header-criar-pagina b {
+.header-meio b {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
   font-size: 16px;
   font-weight: 600;
 }
-.header-criar-pagina p {
-  margin: 0px;
+.header-meio p {
   color: var(--azul-2, #22263b);
   font-family: "Inter";
   font-size: 13px;
@@ -128,22 +115,20 @@ header {
   line-height: 28px;
 }
 .header-ld {
-  display: flex;
+  display: inline-flex;
   flex-direction: row;
   align-items: center;
-}
-.icon-notificacoes {
-  margin-left: 10px;
-}
-.img-perfil {
-  border-radius: 50px;
-  margin-left: 22px;
+  justify-content: flex-end;
+  align-content: center;
+  flex-wrap: wrap;
 }
 
+.img-perfil {
+  border-radius: 50px;
+}
 main {
   margin-top: 30px;
   margin-left: 30px;
-  padding-right: 10px;
 }
 main > h2 {
   color: var(--Azul-2, #22263b);
@@ -190,15 +175,16 @@ main > p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: ease-in-out 0.3s;
 }
 .pagina-editada-button:hover {
-  border: #22263b;
+  border: #22263b 1px solid;
   border-radius: 6px;
   background: var(--Azul-2, #22263b);
   color: #fff;
 }
 .pagina-editada-button-azul {
-  border: #22263b;
+  border: #22263b 1px solid;
   padding: 12px 23px;
   margin-right: 12px;
   border-radius: 6px;
@@ -209,6 +195,7 @@ main > p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: ease-in-out 0.3s;
 }
 .pagina-editada-button-azul:hover {
   border: 1px solid var(--White-Blue, #f6f6fa);
@@ -226,6 +213,7 @@ main > p {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: ease-in-out 0.3s;
 }
 .pagina-editada-button-azul-adicionar-membro:hover {
   background-color: white;
@@ -622,6 +610,7 @@ input:checked + .slider:before {
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+  transition: ease-in-out 0.3s;
 }
 .pagina-editada-button-azul-area-atuacao:hover {
   background-color: white;

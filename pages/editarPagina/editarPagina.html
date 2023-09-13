@@ -14,229 +14,415 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 0rem;
+        }
+
+        p {
+            margin: 0;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        .content {
+            padding: 0 5em 0 5em;
+        }
+
+        .logoPagina {
+            padding-bottom: 3em;
+        }
+
+        .header-criar-pagina {
+            display: inline-flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: center;
+            align-content: center;
+        }
+
+        .header-criar-pagina p {
+            padding-left: 15px;
+        }
+
+        header .header-ld ul {
+            display: inline-block;
+        }
+
+        header .header-ld ul li {
+            width: auto !important;
+            display: inline-flex;
+
+        }
+
+        header .header-ld ul li:nth-last-child(1) {
+            padding-right: 0;
+        }
+
+        .nav-bloco-1 a p {
+            padding-left: 15px;
+        }
+
+
+        .nav-bloco-1 li a {
+            display: inline-flex;
+            transition: ease-in-out 0.3s;
+        }
+
+        .nav-bloco-1 li a:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-bloco-2 li a {
+            gap: 8px;
+            display: inline-flex;
+            transition: ease-in-out 0.3s;
+        }
+
+        .nav-bloco-2 li a:hover {
+            transform: scale(1.1);
+        }
+
+        .nav-bloco-3 li a {
+            display: inline-flex;
+            transition: ease-in-out 0.3s;
+        }
+
+        .nav-bloco-3 li a:hover {
+            transform: scale(1.1);
+        }
+    </style>
 </head>
 
-<body class="container">
-    <nav>
-        <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog" width="148" height="32.336">
-
-        <div class="nav-bloco-1">
-            <div>
-                <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15" height="14">
-                <a>Dashboard</a>
-            </div>
-            <div>
-                <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
-                <a>Páginas</a>
-            </div>
-            <div>
-                <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
-                <a>Pagamentos</a>
-            </div>
-        </div>
-        <div class="nav-bloco-2">
-            <h5>Integrações</h5>
-            <div>
-                <img src="../../assets/ic_analytics 1.png" alt="">
-                <a>Google Analitycs</a>
-            </div>
-            <div>
-                <img src="../../assets/iconMeta.png" alt="">
-                <a>Business Manager</a>
-            </div>
-            <div>
-                <img src="../../assets/iconWhatsApp.png" alt="">
-                <a>WhatsApp</a>
-            </div>
-            <div>
-                <img src="../../assets/iconEmail.png" alt="">
-                <a>E-mail</a>
-            </div>
-        </div>
-        <div class="nav-bloco-3">
-            <a>Minha Conta</a>
-            <a>Suporte</a>
-            <a>Sair</a>
-
-        </div>
-    </nav>
-    <div class="ld-body">
-        <div class="header-mobile">
-            <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
-                aria-controls="staticBackdrop">
-                <img id="button-menu" src="../../assets/justify.svg" alt="">
-            </button>
-
-            <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
-                aria-labelledby="staticBackdropLabel">
-                <div class="offcanvas-header">
-                    <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog">
-                    <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    <div>
 
 
-                        <div class="nav-bloco-1">
-                            <div>
-                                <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15" height="14">
-                                <a>Dashboard</a>
-                            </div>
-                            <div>
-                                <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
-                                <a>Páginas</a>
-                            </div>
-                            <div>
-                                <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
-                                <a>Pagamentos</a>
-                            </div>
-                        </div>
-                        <div class="nav-bloco-2">
-                            <h5>Integrações</h5>
-                            <div>
-                                <img src="../../assets/ic_analytics 1.png" alt="">
-                                <a>Google Analitycs</a>
-                            </div>
-                            <div>
-                                <img src="../../assets/iconMeta.png" alt="">
-                                <a>Business Manager</a>
-                            </div>
-                            <div>
-                                <img src="../../assets/iconWhatsApp.png" alt="">
-                                <a>WhatsApp</a>
-                            </div>
-                            <div>
-                                <img src="../../assets/iconEmail.png" alt="">
-                                <a>E-mail</a>
-                            </div>
-                        </div>
-                        <div class="nav-bloco-3">
-                            <a>Minha Conta</a>
-                            <a>Suporte</a>
-                            <a>Sair</a>
+<body>
+    <div class="content row w-100 m-auto">
+        <nav class="col-sm-9 col-md-3 col-lg-2">
+            <img class="logoPagina" src="../../assets/logoAdvoog.svg" alt="logoAdvoog" width="148" height="auto">
+            <ul class="nav-bloco-1 row">
+                <li>
+                    <a href="#">
+                        <img src="../../assets/plus.svg" alt="iconDashboard" width="15" height="14">
+                        <p>Dashboard</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../assets/paginas.svg" alt="iconpaginas" width="15" height="16">
+                        <p>Páginas</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../assets/pagamento.svg" alt="iconSifrao" width="15" height="18">
+                        <p>Pagamentos</p>
+                    </a>
+                </li>
 
-                        </div>
+            </ul>
+            <ul class="nav-bloco-2 row">
+                <h5>Integrações</h5>
+                <li>
+
+                    <a href="#">
+                        <img src="../../assets/analytics.svg" alt="Analitycs">
+                        Google Analitycs</a>
+                </li>
+                <li>
+
+                    <a href="#">
+                        <img src="../../assets/meta.svg" alt="">
+                        Business Manager</a>
+                </li>
+                <li>
+                    <a>
+                        <img src="../../assets/whatsapp.svg" alt="">
+                        WhatsApp</a>
+                </li>
+                <li>
+                    <a href="#">
+                        <img src="../../assets/email.svg" alt="">
+                        E-mail</a>
+                </li>
+            </ul>
+            <ul class="nav-bloco-3 row">
+                <li>
+                    <a href="#">Minha Conta</a>
+                </li>
+                <li>
+                    <a href="#">Suporte</a>
+                </li>
+                <li>
+                    <a href="#">Sair</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="ld-body col-sm-12 col-md-9 col-lg-10">
+            <div class="header-mobile">
+                <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
+                    aria-controls="staticBackdrop">
+                    <img id="button-menu" src="../../assets/justify.svg" alt="">
+                </button>
+
+                <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
+                    aria-labelledby="staticBackdropLabel">
+                    <div class="offcanvas-header">
+                        <img class="logoPagina" src="../../assets/logoAdvoog.png" alt="logoAdvoog">
+                        <button class="btn-close" type="button" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                     </div>
-                </div>
-            </div>
-            <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
-                aria-controls="offcanvasRight"> <img class="img-perfil" src="../../assets/imgHeader.png"
-                    alt="imgHeader">
-            </button>
-
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
-                aria-labelledby="offcanvasRightLabel">
-                <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                </div>
-                <div class="offcanvas-body">
-                    ...
-                </div>
-            </div>
-        </div>
-        <header>
-            <div class="header-le">
-                <img src="../../assets/iconLupa.png" alt="iconLupa" width="15" height="15">
-                <input type="text" placeholder="Pesquise por páginas, pagamentos...">
-            </div>
+                    <div class="offcanvas-body">
+                        <div>
 
 
-            <div class="header-ld">
-                <div class="header-criar-pagina">
-                    <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="14" height="14">
-
-                    <p>
-                        <b>Criar Página</b> <br>
-                        Comece uma nova página
-                    </p>
-                </div>
-                <a href="../chat/chat.html"><img class="icon-chat" src="../../assets/iconChat.png" alt="iconChat"></a>
-                <img class="icon-notificacoes" src="../../assets/iconNotificacoes.png" alt="iconNotificacoes">
-                <img class="img-perfil" src="../../assets/imgHeader.png" alt="imgHeader">
-            </div>
-        </header>
-        <main>
-            <h2>Edição de Páginas</h2>
-            <p>Você está no modo de edição de páginas</p>
-            <div class="pagina-editada flex-wrap mt-5">
-                <div>
-                    <p>Você está editando</p>
-                    <h4>Capsula Advogados</h4>
-                    <p><b>Ativo</b> https://capsula.digital</p>
-                </div>
-                <div class="d-flex align-items-end flex-wrap">
-                    <button class="pagina-editada-button">Cancelar</button>
-                    <button class="pagina-editada-button">Salvar Alterações</button>
-                    <button class="pagina-editada-button-azul">Publicar</button>
-                </div>
-            </div>
-            <div class="editar-pagina mt-5 row">
-                <div class="d-flex flex-wrap">
-                    <div class="col-lg-5">
-                        <p><b>Título da Página</b><br>
-                            Esse é o título que será visível para todos</p>
-                    </div>
-                    <div class="col-lg-7 ">
-                        <input class="input-text col-lg-12" type="text">
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Favicon</b><br>
-                            Esse é o icone do seu site</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7 ">
-                        <div class="img-adicionada">
-                            <img src="../../assets/capsula.svg" alt="" width="72px">
-                            <button>
-                                <img src="../../assets/fechar-img.svg" alt="" width="24px">
-                            </button>
-                        </div>
-                        <div class="enviar-foto p-4">
-                            <div>
-                                <img src="../../assets/image.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label class="label-file">
-                                    <input type="file" id="favicon" style="display: none" accept=".jpg, .jpeg, .png">
-                                    <b>Clique ou arraste aqui para enviar o
-                                        favicon
-                                        do
-                                        seu site.</b><br> Tamanho máximo 512kb ı 148x32
-                                </label>
-                                <label for="favicon" class="button-procurar">
-                                    Procurar
-                                </label>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Logo do Site</b><br>
-                            Esse é o logo do seu site</p>
-                    </div>
-                    <div class="d-flex flex-column col-lg-7 ">
-                        <img src="" alt="">
-                        <div class="d-flex flex-column ">
-                            <div class="img-adicionada">
-                                <img src="../../assets/logoAdvoog.png" alt="" width="148px">
-                                <div class="button-close">
-                                    <button>
-                                        <img src="../../assets/fechar-img.svg" alt="" width="24px">
-                                    </button>
+                            <div class="nav-bloco-1">
+                                <div>
+                                    <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15"
+                                        height="14">
+                                    <a>Dashboard</a>
                                 </div>
+                                <div>
+                                    <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
+                                    <a>Páginas</a>
+                                </div>
+                                <div>
+                                    <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
+                                    <a>Pagamentos</a>
+                                </div>
+                            </div>
+                            <div class="nav-bloco-2">
+                                <h5>Integrações</h5>
+                                <div>
+                                    <img src="../../assets/ic_analytics 1.png" alt="">
+                                    <a>Google Analitycs</a>
+                                </div>
+                                <div>
+                                    <img src="../../assets/iconMeta.png" alt="">
+                                    <a>Business Manager</a>
+                                </div>
+                                <div>
+                                    <img src="../../assets/iconWhatsApp.png" alt="">
+                                    <a>WhatsApp</a>
+                                </div>
+                                <div>
+                                    <img src="../../assets/iconEmail.png" alt="">
+                                    <a>E-mail</a>
+                                </div>
+                            </div>
+                            <div class="nav-bloco-3">
+                                <a>Minha Conta</a>
+                                <a>Suporte</a>
+                                <a>Sair</a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                    aria-controls="offcanvasRight"> <img class="img-perfil" src="../../assets/imgHeader.png"
+                        alt="imgHeader">
+                </button>
+
+                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
+                    aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        ...
+                    </div>
+                </div>
+            </div>
+            <header class="col-12">
+                <div class="header-le col-sm-6 col-md-7 col-lg-7">
+                    <img src="../../assets/iconLupa.png" alt="iconLupa" width="15" height="15" />
+                    <input type="text" placeholder="Pesquise por páginas, pagamentos...">
+                </div>
+                <div class="header-ld col-sm-6 col-md-5 col-lg-5">
+                    <ul class="row">
+                        <li>
+                            <a class="header-criar-pagina" href="#">
+                                <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="14" height="14">
+                                <p>
+                                    <b>Criar Página</b> <br>
+                                    Comece uma nova página
+                                </p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../chat/chat.html">
+                                <img class="icon-chat" src="../../assets/chat.svg" alt="iconChat" />
+                            </a>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="icon-notificacoes" src="../../assets/Notificacoes.svg"
+                                        alt="iconNotificacoes" />
+                                </a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="dropdown">
+                                <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img class="img-perfil" src="../../assets/imgHeader.png" alt="imgHeader" />
+                                </a>
+
+                                <div class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Action</a>
+
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </header>
+            <main>
+                <h2>Edição de Páginas</h2>
+                <p>Você está no modo de edição de páginas</p>
+                <div class="pagina-editada flex-wrap mt-5">
+                    <div>
+                        <p>Você está editando</p>
+                        <h4>Capsula Advogados</h4>
+                        <p><b>Ativo</b> https://capsula.digital</p>
+                    </div>
+                    <div class="d-flex align-items-end flex-wrap">
+                        <button class="pagina-editada-button">Cancelar</button>
+                        <button class="pagina-editada-button">Salvar Alterações</button>
+                        <button class="pagina-editada-button-azul">Publicar</button>
+                    </div>
+                </div>
+                <div class="editar-pagina mt-5 row">
+                    <div class="d-flex flex-wrap">
+                        <div class="col-lg-5">
+                            <p><b>Título da Página</b><br>
+                                Esse é o título que será visível para todos</p>
+                        </div>
+                        <div class="col-lg-7 ">
+                            <input class="input-text col-lg-12" type="text">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-lg-12">
+                        <div class="col-lg-5">
+                            <p><b>Favicon</b><br>
+                                Esse é o icone do seu site</p>
+                        </div>
+
+                        <div class="d-flex flex-column col-lg-7 ">
+                            <div class="img-adicionada">
+                                <img src="../../assets/capsula.svg" alt="" width="72px">
+                                <button>
+                                    <img src="../../assets/fechar-img.svg" alt="" width="24px">
+                                </button>
                             </div>
                             <div class="enviar-foto p-4">
                                 <div>
                                     <img src="../../assets/image.svg" alt="">
                                 </div>
                                 <div class="d-flex flex-column">
-                                    <label class="label-file" for="favicon"><b>Clique ou arraste aqui para enviar o
+                                    <label class="label-file">
+                                        <input type="file" id="favicon" style="display: none"
+                                            accept=".jpg, .jpeg, .png">
+                                        <b>Clique ou arraste aqui para enviar o
                                             favicon
+                                            do
+                                            seu site.</b><br> Tamanho máximo 512kb ı 148x32
+                                    </label>
+                                    <label for="favicon" class="button-procurar">
+                                        Procurar
+                                    </label>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-lg-12">
+                        <div class="col-lg-5">
+                            <p><b>Logo do Site</b><br>
+                                Esse é o logo do seu site</p>
+                        </div>
+                        <div class="d-flex flex-column col-lg-7 ">
+                            <img src="" alt="">
+                            <div class="d-flex flex-column ">
+                                <div class="img-adicionada">
+                                    <img src="../../assets/logoAdvoog.png" alt="" width="148px">
+                                    <div class="button-close">
+                                        <button>
+                                            <img src="../../assets/fechar-img.svg" alt="" width="24px">
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="enviar-foto p-4">
+                                    <div>
+                                        <img src="../../assets/image.svg" alt="">
+                                    </div>
+                                    <div class="d-flex flex-column">
+                                        <label class="label-file" for="favicon"><b>Clique ou arraste aqui para
+                                                enviar o
+                                                favicon
+                                                do
+                                                seu site.</b><br> Tamanho máximo 512kb ı 148x32
+                                        </label>
+                                        <input type="file" id="favicon" style="display: none"
+                                            accept=".jpg, .jpeg, .png">
+                                        <label for="favicon" class="button-procurar">
+                                            Procurar
+                                        </label>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-lg-12">
+                        <div class="col-lg-5">
+                            <p><b>Cores</b><br>
+                                Selecione a cor principal e secundária</p>
+                        </div>
+
+                        <div class="d-flex flex-column col-lg-7 ">
+                            <div class="color-div    mb-3">
+                                <input class="input-color" type="color">
+                            </div>
+                            <div class="color-div ">
+                                <input class="input-color" type="color">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-wrap col-lg-12">
+                        <div class="col-lg-5">
+                            <p><b>Banner Principal</b><br>
+                                Altere os textos principais</p>
+                        </div>
+
+                        <div class="d-flex flex-column col-lg-7 ">
+                            <div class="color-div col-lg-12">
+                                <input class="input-color " type="color">
+                            </div>
+                            <div class="d-flex flex-column align-items-end mb-5 mt-3">
+                                <img class="img-banner-exmp" class="mt-4" src="../../assets/bannerPrincipalEexmplo.png"
+                                    alt="">
+                                <button class="btn-fechar-backgrund mb-2">
+                                    <img src="../../assets/fechar-img.svg" alt="">
+                                </button>
+                            </div>
+                            <div class="enviar-foto p-4 mt-5">
+                                <div>
+                                    <img src="../../assets/image.svg" alt="">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <label class="label-file" for="favicon"><b>Clique ou arraste aqui para enviar o
+                                            background
                                             do
                                             seu site.</b><br> Tamanho máximo 512kb ı 148x32
                                     </label>
@@ -246,908 +432,861 @@
                                     </label>
                                 </div>
                             </div>
-
+                            <input class="input-text mt-3 mb-3" type="text" placeholder="Texto 1">
+                            <input class="input-text " type="text" placeholder="Texto 2">
                         </div>
                     </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Cores</b><br>
-                            Selecione a cor principal e secundária</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7 ">
-                        <div class="color-div    mb-3">
-                            <input class="input-color" type="color">
-                        </div>
-                        <div class="color-div ">
-                            <input class="input-color" type="color">
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Banner Principal</b><br>
-                            Altere os textos principais</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7 ">
-                        <div class="color-div col-lg-12">
-                            <input class="input-color " type="color">
-                        </div>
-                        <div class="d-flex flex-column align-items-end mb-5 mt-3">
-                            <img class="img-banner-exmp" class="mt-4" src="../../assets/bannerPrincipalEexmplo.png"
-                                alt="">
-                            <button class="btn-fechar-backgrund mb-2">
-                                <img src="../../assets/fechar-img.svg" alt="">
-                            </button>
-                        </div>
-                        <div class="enviar-foto p-4 mt-5">
-                            <div>
-                                <img src="../../assets/image.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label class="label-file" for="favicon"><b>Clique ou arraste aqui para enviar o
-                                        background
-                                        do
-                                        seu site.</b><br> Tamanho máximo 512kb ı 148x32
-                                </label>
-                                <input type="file" id="favicon" style="display: none" accept=".jpg, .jpeg, .png">
-                                <label for="favicon" class="button-procurar">
-                                    Procurar
-                                </label>
-                            </div>
-                        </div>
-                        <input class="input-text mt-3 mb-3" type="text" placeholder="Texto 1">
-                        <input class="input-text " type="text" placeholder="Texto 2">
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Formulário</b><br>
-                            Altere os textos do formulário</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7">
-                        <input class="input-text mb-3" type="text">
-                        <input class="input-text" type="text">
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>Contato</b><br>
-                            Altere as informações de contato</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7">
-                        <input class="input-text mb-3" type="text" placeholder="E-mail">
-                        <input class="input-text" type="text" placeholder="Telefone">
-                    </div>
-                </div>
-                <div class="d-flex flex-wrap col-lg-12">
-                    <div class="col-lg-5">
-                        <p><b>WhatsAppContato</b><br>
-                            Insira o link do WhatsApp do seu escritório <br>
-                            que irá receber as mensagens do site</p>
-                    </div>
-
-                    <div class="d-flex flex-column col-lg-7">
-                        <input class="input-text mb-3" type="text" placeholder="numero WhatsApp">
-                        <input class="input-text" type="text">
-                    </div>
-                </div>
-                <div class="d-flex flex-column  mb-3">
-                    <div class="d-flex flex-row col-lg-12 ">
+                    <div class="d-flex flex-wrap col-lg-12">
                         <div class="col-lg-5">
-                            <p><b>Logo Clientes</b><br>
-                                Envie as logos dos seus clientes ou marcas parceiros</p>
+                            <p><b>Formulário</b><br>
+                                Altere os textos do formulário</p>
                         </div>
-                        <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
 
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseLogos"
-                                    aria-expanded="false" aria-controls="collapseLogos">
-                                <span class="slider round"></span>
-                            </label>
-
+                        <div class="d-flex flex-column col-lg-7">
+                            <input class="input-text mb-3" type="text">
+                            <input class="input-text" type="text">
                         </div>
                     </div>
-                    <div class="collapse" id="collapseLogos">
-                        <div class="logos flex-wrap mt-4">
-                            <div class="d-flex flex-column">
-                                <button class="btn-fechar-logos mb-3">
-                                    <img src="../../assets/fecharButton.svg" alt="">
-                                </button>
-                                <img src="../../assets/logoXCocaCola.svg" alt="logoCocaCola">
-
-                            </div>
-                            <div class="d-flex flex-column mb-3">
-                                <button class="btn-fechar-logos">
-                                    <img src="../../assets/fecharButton.svg" alt="">
-                                </button>
-                                <img src="../../assets/logoNike.svg" alt="">
-
-                            </div>
-                            <div class="d-flex flex-column mb-3">
-                                <button class="btn-fechar-logos">
-                                    <img src="../../assets/fecharButton.svg" alt="">
-                                </button>
-                                <img src="../../assets/logoWhatsapp.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-column mb-3">
-                                <button class="btn-fechar-logos">
-                                    <img src="../../assets/fecharButton.svg" alt="">
-                                </button>
-                                <img src="../../assets/logoMicrosoft.svg" alt="">
-                            </div>
-                            <div class="d-flex flex-column mb-3">
-                                <button class="btn-fechar-logos">
-                                    <img src="../../assets/fecharButton.svg" alt="">
-                                </button>
-                                <img src="../../assets/logoAdvoog.svg" alt="">
-                            </div>
-
-                            <label class="input-logo-cliente">
-                                <img src="../../assets/imgImgBranco.svg" alt="" width="22px">
-                                Fazer upload
-                                <input type="file" name="" id="" style="display: none;">
-                            </label>
-
-
-                        </div>
-                    </div>
-
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
-                        <div class=" col-lg-5">
-                            <p><b>Pontos de Destaque</b><br>
-                                Adicione pontos de destaque do seu escritório</p>
-                        </div>
-
-                        <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse"
-                                    data-bs-target="#collapsePontosDestaques" aria-expanded="false"
-                                    aria-controls="collapsePontosDestaques">
-                                <span class="slider round"></span>
-                            </label>
-
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapsePontosDestaques">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex flex-column ">
-                                <label class="destaque mt-4" for="">1° Destaque</label>
-                                <input class="input-text mt-3 mb-3" type="text">
-                                <input class="input-text" type="text">
-                            </div>
-                            <div class="d-flex flex-column mt-3 mb-3">
-                                <label class="destaque" for="">2° Destaque</label>
-                                <input class="input-text mt-3 mb-3" type="text">
-                                <input class="input-text" type="text">
-                            </div>
-                            <div class="d-flex flex-column">
-                                <label class="destaque" for="">3° Destaque</label>
-                                <input class="input-text mt-3 mb-3" type="text">
-                                <input class="input-text " type="text">
-                            </div>
-                            <div class="d-flex flex-column mt-3 mb-3">
-                                <label class="destaque" for="">4° Destaque</label>
-                                <input class="input-text mt-3 mb-3" type="text">
-                                <input class="input-text" type="text">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-wrap col-lg-12">
                         <div class="col-lg-5">
-                            <p><b>Destaque</b><br>
-                                Selecione a segunda imagem destaque</p>
+                            <p><b>Contato</b><br>
+                                Altere as informações de contato</p>
                         </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseDestaque"
-                                    aria-expanded="false" aria-controls="collapseDestaque">
-                                <span class="slider round"></span>
 
-                            </label>
+                        <div class="d-flex flex-column col-lg-7">
+                            <input class="input-text mb-3" type="text" placeholder="E-mail">
+                            <input class="input-text" type="text" placeholder="Telefone">
                         </div>
                     </div>
-
-                    <div class="collapse" id="collapseDestaque">
-                        <div class="d-flex flex-row">
-                            <div class="col-lg-5"></div>
-                            <div class="d-flex flex-column col-lg-7">
-                                <div class="d-flex flex-column align-items-end mb-5 mt-4">
-                                    <img class="img-background-Destaque-exmp" class="mt-4"
-                                        src="../../assets/imgBackgroundDestaque.png" alt="">
-                                    <button class="btn-fechar-backgrund-destaque mb-5">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="enviar-foto-destaque p-4 mt-5">
-                                    <div>
-                                        <img src="../../assets/image.svg" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <label class="label-file">
-                                            <input type="file" id="backgroundDestaque" style="display: none"
-                                                accept=".jpg, .jpeg, .png">
-                                            <b>Clique ou arraste aqui para enviar o
-                                                background
-                                                do
-                                                seu site.</b><br> Tamanho máximo 512kb ı 148x32
-                                        </label>
-                                        <label for="backgroundDestaque" class="button-procurar">
-                                            Procurar
-                                        </label>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
+                    <div class="d-flex flex-wrap col-lg-12">
                         <div class="col-lg-5">
-                            <p><b>Sobre</b><br>
-                                Insira informações sobre seu escritório</p>
+                            <p><b>WhatsAppContato</b><br>
+                                Insira o link do WhatsApp do seu escritório <br>
+                                que irá receber as mensagens do site</p>
                         </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseSobre"
-                                    aria-expanded="false" aria-controls="collapseSobre">
-                                <span class="slider round"></span>
 
-                            </label>
+                        <div class="d-flex flex-column col-lg-7">
+                            <input class="input-text mb-3" type="text" placeholder="numero WhatsApp">
+                            <input class="input-text" type="text">
                         </div>
                     </div>
-                    <div class="collapse" id="collapseSobre">
-                        <div class="d-flex flex-row mt-4">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <input class="input-text mb-3" type="text">
-                                <input class="input-text mb-3" type="text">
-                                <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
-                            </div>
-
-                        </div>
-                        <div class="d-flex flex-row flex-wrap mt-4">
+                    <div class="d-flex flex-column  mb-3">
+                        <div class="d-flex flex-row col-lg-12 ">
                             <div class="col-lg-5">
-                                <p><b>Vídeo</b><br>
-                                    Insira o link do Youtube do seu vídeo</p>
+                                <p><b>Logo Clientes</b><br>
+                                    Envie as logos dos seus clientes ou marcas parceiros</p>
                             </div>
-                            <div class="col-lg-7">
+                            <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
+
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseLogos"
+                                        aria-expanded="false" aria-controls="collapseLogos">
+                                    <span class="slider round"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseLogos">
+                            <div class="logos flex-wrap mt-4">
                                 <div class="d-flex flex-column">
+                                    <button class="btn-fechar-logos mb-3">
+                                        <img src="../../assets/fecharButton.svg" alt="">
+                                    </button>
+                                    <img src="../../assets/logoXCocaCola.svg" alt="logoCocaCola">
+
+                                </div>
+                                <div class="d-flex flex-column mb-3">
+                                    <button class="btn-fechar-logos">
+                                        <img src="../../assets/fecharButton.svg" alt="">
+                                    </button>
+                                    <img src="../../assets/logoNike.svg" alt="">
+
+                                </div>
+                                <div class="d-flex flex-column mb-3">
+                                    <button class="btn-fechar-logos">
+                                        <img src="../../assets/fecharButton.svg" alt="">
+                                    </button>
+                                    <img src="../../assets/logoWhatsapp.svg" alt="">
+                                </div>
+                                <div class="d-flex flex-column mb-3">
+                                    <button class="btn-fechar-logos">
+                                        <img src="../../assets/fecharButton.svg" alt="">
+                                    </button>
+                                    <img src="../../assets/logoMicrosoft.svg" alt="">
+                                </div>
+                                <div class="d-flex flex-column mb-3">
+                                    <button class="btn-fechar-logos">
+                                        <img src="../../assets/fecharButton.svg" alt="">
+                                    </button>
+                                    <img src="../../assets/logoAdvoog.svg" alt="">
+                                </div>
+
+                                <label class="input-logo-cliente">
+                                    <img src="../../assets/imgImgBranco.svg" alt="" width="22px">
+                                    Fazer upload
+                                    <input type="file" name="" id="" style="display: none;">
+                                </label>
+
+
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class=" col-lg-5">
+                                <p><b>Pontos de Destaque</b><br>
+                                    Adicione pontos de destaque do seu escritório</p>
+                            </div>
+
+                            <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse"
+                                        data-bs-target="#collapsePontosDestaques" aria-expanded="false"
+                                        aria-controls="collapsePontosDestaques">
+                                    <span class="slider round"></span>
+                                </label>
+
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapsePontosDestaques">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-column ">
+                                    <label class="destaque mt-4" for="">1° Destaque</label>
+                                    <input class="input-text mt-3 mb-3" type="text">
+                                    <input class="input-text" type="text">
+                                </div>
+                                <div class="d-flex flex-column mt-3 mb-3">
+                                    <label class="destaque" for="">2° Destaque</label>
+                                    <input class="input-text mt-3 mb-3" type="text">
+                                    <input class="input-text" type="text">
+                                </div>
+                                <div class="d-flex flex-column">
+                                    <label class="destaque" for="">3° Destaque</label>
+                                    <input class="input-text mt-3 mb-3" type="text">
+                                    <input class="input-text " type="text">
+                                </div>
+                                <div class="d-flex flex-column mt-3 mb-3">
+                                    <label class="destaque" for="">4° Destaque</label>
+                                    <input class="input-text mt-3 mb-3" type="text">
                                     <input class="input-text" type="text">
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
-
-
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-5">
-                            <p><b>Time</b><br>
-                                Selecione a segunda imagem destaque</p>
-                        </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseTime"
-                                    aria-expanded="false" aria-controls="collapseTime">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseTime">
+                    <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <div class="mt-4 d-flex align-items-start">
+                            <div class="col-lg-5">
+                                <p><b>Destaque</b><br>
+                                    Selecione a segunda imagem destaque</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseDestaque"
+                                        aria-expanded="false" aria-controls="collapseDestaque">
+                                    <span class="slider round"></span>
 
-                                    <img src="../../assets/imgFotoTime.png" alt="">
-                                    <button class="fechar-img-time">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
+                                </label>
+                            </div>
+                        </div>
 
-                                </div>
-                                <div class="enviar-foto-destaque p-4 mt-5">
-                                    <div>
-                                        <img src="../../assets/image.svg" alt="">
+                        <div class="collapse" id="collapseDestaque">
+                            <div class="d-flex flex-row">
+                                <div class="col-lg-5"></div>
+                                <div class="d-flex flex-column col-lg-7">
+                                    <div class="d-flex flex-column align-items-end mb-5 mt-4">
+                                        <img class="img-background-Destaque-exmp" class="mt-4"
+                                            src="../../assets/imgBackgroundDestaque.png" alt="">
+                                        <button class="btn-fechar-backgrund-destaque mb-5">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
                                     </div>
-                                    <div class="d-flex flex-column">
-                                        <label class="label-file">
-                                            <input type="file" id="fotoTime" style="display: none"
-                                                accept=".jpg, .jpeg, .png">
-                                            <b>Clique ou arraste aqui para enviar uma foto
-                                                do
-                                                seu site.</b><br> Tamanho máximo 512kb ı 200x304
-                                        </label>
-                                        <label for="fotoTime" class="button-procurar">
-                                            Procurar
-                                        </label>
-                                    </div>
-                                </div>
-                                <input class="input-text mt-3 mb-3" type="text">
-                                <input class="input-text mb-3" type="text">
-                                <button class="pagina-editada-button-azul-adicionar-membro">Adicionar Membro</button>
-
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row flex-wrap mostar-time">
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-
-                            <div class="card-time">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                            <div class="card-time ">
-                                <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Dr. João Henrique</h5>
-                                <p>Trabalhista</p>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar membro
-                                </a>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-5">
-                            <p><b>Depoimentos</b><br>
-                                Depoimentos de clientes</p>
-                        </div>
-                        <div class="d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseDepoimentos"
-                                    aria-expanded="false" aria-controls="collapseDepoimentos">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseDepoimentos">
-                        <div class="d-flex flex-row">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <div class="mt-4 d-flex align-items-start">
-
-                                    <img src="../../assets/imgFotoDepoimentos.png" alt="">
-                                    <button class="fechar-img-time">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
-                                </div>
-                                <div class="enviar-foto-destaque p-4 mt-5">
-                                    <div>
-                                        <img src="../../assets/image.svg" alt="">
-                                    </div>
-                                    <div class="d-flex flex-column">
-                                        <label class="label-file">
-                                            <input type="file" id="FotoDepoimentos" style="display: none"
-                                                accept=".jpg, .jpeg, .png">
-                                            <b>Clique ou arraste aqui para enviar uma foto
-                                                do
-                                                seu site.</b><br> Tamanho máximo 512kb ı 200x304
-                                        </label>
-                                        <label for="FotoDepoimentos" class="button-procurar">
-                                            Procurar
-                                        </label>
-                                    </div>
-                                </div>
-                                <label for="fraseImpacto" class="label-depoimentos  mt-4 mb-3">Frase de Impacto do
-                                    Depoimento</label>
-                                <input id="fraseImpacto" class="input-text" type="text">
-                                <label for="" class="label-depoimentos mt-4 mb-3">Depoimento</label>
-                                <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
-                                <label for="" class="label-depoimentos  mt-4 mb-3">Nome, Empresa</label>
-                                <input class="input-text" type="text">
-                                <button class="pagina-editada-button-azul-adicionar-membro  mt-4 mb-3">Adicionar
-                                    Depoimento</button>
-
-                            </div>
-                        </div>
-                        <div class="d-flex flex-row flex-wrap mostar-time">
-
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-                            <div class="card-depoimentos">
-                                <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
-                                    height="201.619px">
-                                <button><img src="../../assets/fechar-img.svg" alt=""></button>
-                                <h5>Lucas, Forbes</h5>
-                                <a href="#">
-                                    <img src="../../assets/lapis.svg" alt="">
-                                    Editar
-                                </a>
-                            </div>
-
-
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-row">
-                    <div class="col-lg-5">
-                        <p><b>Blog</b><br>
-                            Exibição de Blog Oficial</p>
-                    </div>
-                    <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-
-                        <label class="switch">
-                            <input type="checkbox">
-                            <span class="slider round"></span>
-                        </label>
-                    </div>
-                </div>
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-5">
-                            <p><b>Áreas de Atuação</b><br>
-                                Destaque 03 áreas de atuação</p>
-                        </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseAreasAtuacao"
-                                    aria-expanded="false" aria-controls="collapseAreasAtuacao">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseAreasAtuacao">
-                        <div class="d-flex flex-row">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <input class="input-text mt-4" type="text">
-                                <textarea name="" id="" cols="30" rows="10" class="mt-3 mb-3 text-area"></textarea>
-                                <input class="input-text" type="text">
-                                <button class="pagina-editada-button-azul-area-atuacao mt-3">Adicionar Área de
-                                    Atuação</button>
-
-                            </div>
-
-
-                        </div>
-                        <div class="mt-4 d-flex flex-row flex-wrap">
-                            <div>
-                                <div class="card-area-atuacao mt-3 me-3">
-                                    <button class="btn-fechar-areas-atuacao-card">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
-                                    <h2>
-                                        Direito do Trabalho
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                                        publishing industries for previewing layouts and visual mockups.
-                                    </p>
-                                    <a href="#">
-                                        <img src="../../assets/lapis.svg" alt="">
-                                        Editar
-                                    </a>
-                                </div>
-
-
-                            </div>
-                            <div>
-
-                                <div class="card-area-atuacao mt-3 me-3">
-                                    <button class="btn-fechar-areas-atuacao-card">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
-                                    <h2>
-                                        Direito do Trabalho
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                                        publishing industries for previewing layouts and visual mockups.
-                                    </p>
-                                    <a href="#">
-                                        <img src="../../assets/lapis.svg" alt="">
-                                        Editar
-                                    </a>
-                                </div>
-
-                            </div>
-                            <div>
-
-                                <div class="card-area-atuacao mt-3 me-3">
-                                    <button class="btn-fechar-areas-atuacao-card">
-                                        <img src="../../assets/fechar-img.svg" alt="">
-                                    </button>
-                                    <h2>
-                                        Direito do Trabalho
-                                    </h2>
-                                    <p>
-                                        Lorem ipsum is placeholder text commonly used in the graphic, print, and
-                                        publishing industries for previewing layouts and visual mockups.
-                                    </p>
-                                    <a href="#">
-                                        <img src="../../assets/lapis.svg" alt="">
-                                        Editar
-                                    </a>
-                                </div>
-
-                            </div>
-
-                        </div>
-                    </div>
-
-                </div>
-
-                <div class="d-flex flex-column">
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-5">
-                            <p><b>Todas Áreas de Atuação</b><br>
-                                Adicione todas áreas de atuação</p>
-                        </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseTodasAreasAtuacao" aria-expanded="false"
-                                    aria-controls="collapseTodasAreasAtuacao">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseTodasAreasAtuacao">
-                        <div class="d-flex flex-row mb-4 mt-4">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-
-                                <input class="input-text mb-3" type="text">
-                                <button class="pagina-editada-button-azul-area-atuacao">
-                                    Adicionar Área de Atuação</button>
-
-                            </div>
-                        </div>
-                        <div>
-                            <div class="editar-todas-areas-atuacao">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="editar-todas-areas-atuacao">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="editar-todas-areas-atuacao">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="editar-todas-areas-atuacao">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="editar-todas-areas-atuacao">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-                            <div class="editar-todas-areas-atuacao-ultimo">
-                                <p>Direito do Trabalho</p>
-                                <div class="d-flex flex-row">
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/lapis.svg" alt="lapis">
-                                        Editar
-                                    </button>
-                                    <button class="btn-todas-areas-atuacao">
-                                        <img src="../../assets/iconRemover.svg" alt="lapis">
-                                        Remover
-                                    </button>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
-
-                <div class="d-flex flex-column mb-5">
-
-                    <div class="d-flex flex-row">
-                        <div class="col-lg-5">
-                            <p><b>Destaque Extra Sobre</b><br>
-                                Insira informações sobre seu escritório</p>
-                        </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
-
-                            <label class="switch">
-                                <input type="checkbox" data-bs-toggle="collapse"
-                                    data-bs-target="#collapseDestaqueExtraSobre" aria-expanded="false"
-                                    aria-controls="collapseDestaqueExtraSobre">
-                                <span class="slider round"></span>
-                            </label>
-                        </div>
-                    </div>
-                    <div class="collapse" id="collapseDestaqueExtraSobre">
-
-                        <div class="row">
-                            <div class="col-lg-5"></div>
-                            <div class="col-lg-7 d-flex flex-column">
-                                <label class="label-depoimentos mt-4 mb-3" for="">Título Destaque</label>
-                                <input class="input-text  mb-3" type="text" name="" id="">
-                                <textarea class="text-area  mb-3" name="" id="" cols="30" rows="10"
-                                    maxlength="255"></textarea>
-                                <div>
-                                </div>
-
-                            </div>
-
-                            <div class="d-flex flex-wrap">
-                                <div class="col-lg-5">
-                                    <p class=" mb-3"><b>Vídeo</b><br>Insira o link do Youtube do seu vídeo</p>
-
-                                </div>
-                                <div class="col-lg-7">
-                                    <div class=" d-flex">
-                                        <input class="input-text  mb-3" type="text" width="100%">
-
-                                    </div>
-
-                                </div>
-
-                            </div>
-                            <div class="d-flex flex-wrap mt-3">
-                                <div class="col-lg-5">
-                                    <p><b>Serviço</b><br>Insira o link do Youtube do seu vídeo</p>
-                                </div>
-                                <div class="col-lg-7">
-                                    <div>
+                                    <div class="enviar-foto-destaque p-4 mt-5">
                                         <div>
-                                            <img src="../../assets/img-mala.svg" alt="">
-                                            <button class="btn-fechar-icon-servico">
-                                                <img src="../../assets/fechar-img.svg" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="enviar-foto p-4">
-                                            <div>
-                                                <img src="../../assets/image.svg" alt="">
-                                            </div>
-                                            <div class="d-flex flex-column">
-                                                <label class="label-file" for="servicoIcon"><b>Clique ou arraste aqui
-                                                        para
-                                                        enviar um icone
-
-                                                    </b><br> Tamanho máximo 512kb ı 148x32
-                                                </label>
-                                                <input accept=".jpg, .jpeg, .png" type="file" id="servicoIcon"
-                                                    style="display: none" accept=".jpg, .jpeg, .png">
-                                                <label for="servicoIcon" class="button-procurar">
-                                                    Procurar
-                                                </label>
-                                            </div>
+                                            <img src="../../assets/image.svg" alt="">
                                         </div>
                                         <div class="d-flex flex-column">
-                                            <input class="input-text mt-3 mb-3" type="text">
-                                            <input class="input-text mb-3" type="text" name="" id="">
-                                        </div>
-
-                                    </div>
-                                    <div>
-                                        <div>
-                                            <img src="../../assets/img-mala.svg" alt="">
-                                            <button class="btn-fechar-icon-servico">
-                                                <img src="../../assets/fechar-img.svg" alt="">
-                                            </button>
-                                        </div>
-                                        <div class="enviar-foto p-4">
-                                            <div>
-                                                <img src="../../assets/image.svg" alt="">
-                                            </div>
-                                            <div class="d-flex flex-column">
-                                                <label class="label-file" for="servicoIcon2"><b>Clique ou arraste aqui
-                                                        para
-                                                        enviar um icone
-
-                                                    </b><br> Tamanho máximo 512kb ı 148x32
-                                                </label>
-                                                <input type="file" id="servicoIcon2" style="display: none"
+                                            <label class="label-file">
+                                                <input type="file" id="backgroundDestaque" style="display: none"
                                                     accept=".jpg, .jpeg, .png">
-                                                <label for="servicoIcon2" class="button-procurar">
-                                                    Procurar
-                                                </label>
-                                            </div>
-                                        </div>
-                                        <div class="d-flex flex-column">
-                                            <input class="input-text mt-3 mb-3" type="text">
-                                            <input class="input-text mb-3" type="text" name="" id="">
+                                                <b>Clique ou arraste aqui para enviar o
+                                                    background
+                                                    do
+                                                    seu site.</b><br> Tamanho máximo 512kb ı 148x32
+                                            </label>
+                                            <label for="backgroundDestaque" class="button-procurar">
+                                                Procurar
+                                            </label>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+                        </div>
 
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Sobre</b><br>
+                                    Insira informações sobre seu escritório</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseSobre"
+                                        aria-expanded="false" aria-controls="collapseSobre">
+                                    <span class="slider round"></span>
+
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseSobre">
+                            <div class="d-flex flex-row mt-4">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+                                    <input class="input-text mb-3" type="text">
+                                    <input class="input-text mb-3" type="text">
+                                    <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
+                                </div>
+
+                            </div>
+                            <div class="d-flex flex-row flex-wrap mt-4">
+                                <div class="col-lg-5">
+                                    <p><b>Vídeo</b><br>
+                                        Insira o link do Youtube do seu vídeo</p>
+                                </div>
+                                <div class="col-lg-7">
+                                    <div class="d-flex flex-column">
+                                        <input class="input-text" type="text">
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="d-flex flex-row flex-wrap justify-content-between">
-                    <p><b>Já fez todas alterações?</b>
-                        <br>Agora é hora de salvar as alterações e publicar
-                    </p>
-                    <div>
-                        <button class="pagina-editada-button">Cancelar</button>
-                        <button class="pagina-editada-button">Salvar Alterações</button>
-                        <button class="pagina-editada-button-azul ">Publicar</button>
+
+
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Time</b><br>
+                                    Selecione a segunda imagem destaque</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseTime"
+                                        aria-expanded="false" aria-controls="collapseTime">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseTime">
+                            <div class="d-flex flex-row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+                                    <div class="mt-4 d-flex align-items-start">
+
+                                        <img src="../../assets/imgFotoTime.png" alt="">
+                                        <button class="fechar-img-time">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
+
+                                    </div>
+                                    <div class="enviar-foto-destaque p-4 mt-5">
+                                        <div>
+                                            <img src="../../assets/image.svg" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label class="label-file">
+                                                <input type="file" id="fotoTime" style="display: none"
+                                                    accept=".jpg, .jpeg, .png">
+                                                <b>Clique ou arraste aqui para enviar uma foto
+                                                    do
+                                                    seu site.</b><br> Tamanho máximo 512kb ı 200x304
+                                            </label>
+                                            <label for="fotoTime" class="button-procurar">
+                                                Procurar
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <input class="input-text mt-3 mb-3" type="text">
+                                    <input class="input-text mb-3" type="text">
+                                    <button class="pagina-editada-button-azul-adicionar-membro">Adicionar
+                                        Membro</button>
+
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap mostar-time">
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+
+                                <div class="card-time">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                                <div class="card-time ">
+                                    <img src="../../assets/imgFotoTime.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Dr. João Henrique</h5>
+                                    <p>Trabalhista</p>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar membro
+                                    </a>
+                                </div>
+
+                            </div>
+                        </div>
                     </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Depoimentos</b><br>
+                                    Depoimentos de clientes</p>
+                            </div>
+                            <div class="d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseDepoimentos" aria-expanded="false"
+                                        aria-controls="collapseDepoimentos">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseDepoimentos">
+                            <div class="d-flex flex-row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+                                    <div class="mt-4 d-flex align-items-start">
+
+                                        <img src="../../assets/imgFotoDepoimentos.png" alt="">
+                                        <button class="fechar-img-time">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="enviar-foto-destaque p-4 mt-5">
+                                        <div>
+                                            <img src="../../assets/image.svg" alt="">
+                                        </div>
+                                        <div class="d-flex flex-column">
+                                            <label class="label-file">
+                                                <input type="file" id="FotoDepoimentos" style="display: none"
+                                                    accept=".jpg, .jpeg, .png">
+                                                <b>Clique ou arraste aqui para enviar uma foto
+                                                    do
+                                                    seu site.</b><br> Tamanho máximo 512kb ı 200x304
+                                            </label>
+                                            <label for="FotoDepoimentos" class="button-procurar">
+                                                Procurar
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <label for="fraseImpacto" class="label-depoimentos  mt-4 mb-3">Frase de Impacto
+                                        do
+                                        Depoimento</label>
+                                    <input id="fraseImpacto" class="input-text" type="text">
+                                    <label for="" class="label-depoimentos mt-4 mb-3">Depoimento</label>
+                                    <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
+                                    <label for="" class="label-depoimentos  mt-4 mb-3">Nome, Empresa</label>
+                                    <input class="input-text" type="text">
+                                    <button class="pagina-editada-button-azul-adicionar-membro  mt-4 mb-3">Adicionar
+                                        Depoimento</button>
+
+                                </div>
+                            </div>
+                            <div class="d-flex flex-row flex-wrap mostar-time">
+
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+                                <div class="card-depoimentos">
+                                    <img src="../../assets/imgFotoDepoimentos.png" alt="foto time" width="185.702px"
+                                        height="201.619px">
+                                    <button><img src="../../assets/fechar-img.svg" alt=""></button>
+                                    <h5>Lucas, Forbes</h5>
+                                    <a href="#">
+                                        <img src="../../assets/lapis.svg" alt="">
+                                        Editar
+                                    </a>
+                                </div>
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-row">
+                        <div class="col-lg-5">
+                            <p><b>Blog</b><br>
+                                Exibição de Blog Oficial</p>
+                        </div>
+                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+
+                            <label class="switch">
+                                <input type="checkbox">
+                                <span class="slider round"></span>
+                            </label>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Áreas de Atuação</b><br>
+                                    Destaque 03 áreas de atuação</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseAreasAtuacao" aria-expanded="false"
+                                        aria-controls="collapseAreasAtuacao">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseAreasAtuacao">
+                            <div class="d-flex flex-row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+                                    <input class="input-text mt-4" type="text">
+                                    <textarea name="" id="" cols="30" rows="10" class="mt-3 mb-3 text-area"></textarea>
+                                    <input class="input-text" type="text">
+                                    <button class="pagina-editada-button-azul-area-atuacao mt-3">Adicionar Área de
+                                        Atuação</button>
+
+                                </div>
+
+
+                            </div>
+                            <div class="mt-4 d-flex flex-row flex-wrap">
+                                <div>
+                                    <div class="card-area-atuacao mt-3 me-3">
+                                        <button class="btn-fechar-areas-atuacao-card">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
+                                        <h2>
+                                            Direito do Trabalho
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                                            publishing industries for previewing layouts and visual mockups.
+                                        </p>
+                                        <a href="#">
+                                            <img src="../../assets/lapis.svg" alt="">
+                                            Editar
+                                        </a>
+                                    </div>
+
+
+                                </div>
+                                <div>
+
+                                    <div class="card-area-atuacao mt-3 me-3">
+                                        <button class="btn-fechar-areas-atuacao-card">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
+                                        <h2>
+                                            Direito do Trabalho
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                                            publishing industries for previewing layouts and visual mockups.
+                                        </p>
+                                        <a href="#">
+                                            <img src="../../assets/lapis.svg" alt="">
+                                            Editar
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <div>
+
+                                    <div class="card-area-atuacao mt-3 me-3">
+                                        <button class="btn-fechar-areas-atuacao-card">
+                                            <img src="../../assets/fechar-img.svg" alt="">
+                                        </button>
+                                        <h2>
+                                            Direito do Trabalho
+                                        </h2>
+                                        <p>
+                                            Lorem ipsum is placeholder text commonly used in the graphic, print, and
+                                            publishing industries for previewing layouts and visual mockups.
+                                        </p>
+                                        <a href="#">
+                                            <img src="../../assets/lapis.svg" alt="">
+                                            Editar
+                                        </a>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="d-flex flex-column">
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Todas Áreas de Atuação</b><br>
+                                    Adicione todas áreas de atuação</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTodasAreasAtuacao" aria-expanded="false"
+                                        aria-controls="collapseTodasAreasAtuacao">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseTodasAreasAtuacao">
+                            <div class="d-flex flex-row mb-4 mt-4">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+
+                                    <input class="input-text mb-3" type="text">
+                                    <button class="pagina-editada-button-azul-area-atuacao">
+                                        Adicionar Área de Atuação</button>
+
+                                </div>
+                            </div>
+                            <div>
+                                <div class="editar-todas-areas-atuacao">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editar-todas-areas-atuacao">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editar-todas-areas-atuacao">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editar-todas-areas-atuacao">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editar-todas-areas-atuacao">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="editar-todas-areas-atuacao-ultimo">
+                                    <p>Direito do Trabalho</p>
+                                    <div class="d-flex flex-row">
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/lapis.svg" alt="lapis">
+                                            Editar
+                                        </button>
+                                        <button class="btn-todas-areas-atuacao">
+                                            <img src="../../assets/iconRemover.svg" alt="lapis">
+                                            Remover
+                                        </button>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex flex-column mb-5">
+
+                        <div class="d-flex flex-row">
+                            <div class="col-lg-5">
+                                <p><b>Destaque Extra Sobre</b><br>
+                                    Insira informações sobre seu escritório</p>
+                            </div>
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+
+                                <label class="switch">
+                                    <input type="checkbox" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseDestaqueExtraSobre" aria-expanded="false"
+                                        aria-controls="collapseDestaqueExtraSobre">
+                                    <span class="slider round"></span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="collapse" id="collapseDestaqueExtraSobre">
+
+                            <div class="row">
+                                <div class="col-lg-5"></div>
+                                <div class="col-lg-7 d-flex flex-column">
+                                    <label class="label-depoimentos mt-4 mb-3" for="">Título Destaque</label>
+                                    <input class="input-text  mb-3" type="text" name="" id="">
+                                    <textarea class="text-area  mb-3" name="" id="" cols="30" rows="10"
+                                        maxlength="255"></textarea>
+                                    <div>
+                                    </div>
+
+                                </div>
+
+                                <div class="d-flex flex-wrap">
+                                    <div class="col-lg-5">
+                                        <p class=" mb-3"><b>Vídeo</b><br>Insira o link do Youtube do seu vídeo</p>
+
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div class=" d-flex">
+                                            <input class="input-text  mb-3" type="text" width="100%">
+
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="d-flex flex-wrap mt-3">
+                                    <div class="col-lg-5">
+                                        <p><b>Serviço</b><br>Insira o link do Youtube do seu vídeo</p>
+                                    </div>
+                                    <div class="col-lg-7">
+                                        <div>
+                                            <div>
+                                                <img src="../../assets/img-mala.svg" alt="">
+                                                <button class="btn-fechar-icon-servico">
+                                                    <img src="../../assets/fechar-img.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="enviar-foto p-4">
+                                                <div>
+                                                    <img src="../../assets/image.svg" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <label class="label-file" for="servicoIcon"><b>Clique ou arraste
+                                                            aqui
+                                                            para
+                                                            enviar um icone
+
+                                                        </b><br> Tamanho máximo 512kb ı 148x32
+                                                    </label>
+                                                    <input accept=".jpg, .jpeg, .png" type="file" id="servicoIcon"
+                                                        style="display: none" accept=".jpg, .jpeg, .png">
+                                                    <label for="servicoIcon" class="button-procurar">
+                                                        Procurar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <input class="input-text mt-3 mb-3" type="text">
+                                                <input class="input-text mb-3" type="text" name="" id="">
+                                            </div>
+
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <img src="../../assets/img-mala.svg" alt="">
+                                                <button class="btn-fechar-icon-servico">
+                                                    <img src="../../assets/fechar-img.svg" alt="">
+                                                </button>
+                                            </div>
+                                            <div class="enviar-foto p-4">
+                                                <div>
+                                                    <img src="../../assets/image.svg" alt="">
+                                                </div>
+                                                <div class="d-flex flex-column">
+                                                    <label class="label-file" for="servicoIcon2"><b>Clique ou
+                                                            arraste aqui
+                                                            para
+                                                            enviar um icone
+
+                                                        </b><br> Tamanho máximo 512kb ı 148x32
+                                                    </label>
+                                                    <input type="file" id="servicoIcon2" style="display: none"
+                                                        accept=".jpg, .jpeg, .png">
+                                                    <label for="servicoIcon2" class="button-procurar">
+                                                        Procurar
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <div class="d-flex flex-column">
+                                                <input class="input-text mt-3 mb-3" type="text">
+                                                <input class="input-text mb-3" type="text" name="" id="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex flex-row flex-wrap justify-content-between">
+                        <p><b>Já fez todas alterações?</b>
+                            <br>Agora é hora de salvar as alterações e publicar
+                        </p>
+                        <div>
+                            <button class="pagina-editada-button">Cancelar</button>
+                            <button class="pagina-editada-button">Salvar Alterações</button>
+                            <button class="pagina-editada-button-azul ">Publicar</button>
+                        </div>
+                    </div>
+
                 </div>
+            </main>
 
-            </div>
+        </div>
 
     </div>
 
-    </div>
-    </div>
-    </main>
-    </div>
 </body>
 
 </html>
