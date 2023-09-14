@@ -14,161 +14,77 @@
         crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <style>
-        ul {
-            list-style: none;
-            padding-left: 0rem;
-        }
+    </head>
 
-        p {
-            margin: 0;
-        }
-
-        a {
-            text-decoration: none;
-        }
-
-        .content {
-            padding: 0 5em 0 5em;
-        }
-
-        .logoPagina {
-            padding-bottom: 3em;
-        }
-
-        .header-criar-pagina {
-            display: inline-flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: flex-start;
-            align-items: center;
-            align-content: center;
-        }
-
-        .header-criar-pagina p {
-            padding-left: 15px;
-        }
-
-        header .header-ld ul {
-            display: inline-block;
-        }
-
-        header .header-ld ul li {
-            width: auto !important;
-            display: inline-flex;
-
-        }
-
-        header .header-ld ul li:nth-last-child(1) {
-            padding-right: 0;
-        }
-
-        .nav-bloco-1 a p {
-            padding-left: 15px;
-        }
-
-
-        .nav-bloco-1 li a {
-            display: inline-flex;
-            transition: ease-in-out 0.3s;
-        }
-
-        .nav-bloco-1 li a:hover {
-            transform: scale(1.1);
-        }
-
-        .nav-bloco-2 li a {
-            gap: 8px;
-            display: inline-flex;
-            transition: ease-in-out 0.3s;
-        }
-
-        .nav-bloco-2 li a:hover {
-            transform: scale(1.1);
-        }
-
-        .nav-bloco-3 li a {
-            display: inline-flex;
-            transition: ease-in-out 0.3s;
-        }
-
-        .nav-bloco-3 li a:hover {
-            transform: scale(1.1);
-        }
-    </style>
-</head>
-
-
-
-<body>
-    <div class="content row w-100 m-auto">
-        <nav class="col-sm-9 col-md-3 col-lg-2">
-            <img class="logoPagina" src="../../assets/logoAdvoog.svg" alt="logoAdvoog" width="148" height="auto">
-            <ul class="nav-bloco-1 row">
-                <li>
-                    <a href="#">
-                        <img src="../../assets/plus.svg" alt="iconDashboard" width="15" height="14">
-                        <p>Dashboard</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../../assets/paginas.svg" alt="iconpaginas" width="15" height="16">
-                        <p>Páginas</p>
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <img src="../../assets/pagamento.svg" alt="iconSifrao" width="15" height="18">
-                        <p>Pagamentos</p>
-                    </a>
-                </li>
-
-            </ul>
-            <ul class="nav-bloco-2 row">
-                <h5>Integrações</h5>
-                <li>
-
-                    <a href="#">
-                        <img src="../../assets/analytics.svg" alt="Analitycs">
-                        Google Analitycs</a>
-                </li>
-                <li>
-
-                    <a href="#">
-                        <img src="../../assets/meta.svg" alt="">
-                        Business Manager</a>
-                </li>
-                <li>
-                    <a>
-                        <img src="../../assets/whatsapp.svg" alt="">
-                        WhatsApp</a>
-                </li>
-                <li>
-                    <a href="#">
+    <body>
+        <div class="content row w-100 m-auto">
+            <nav class="col-sm-9 col-md-3 col-lg-2">
+                <img class="logoPagina" src="../../assets/logoAdvoog.svg" alt="logoAdvoog" width="148" height="auto">
+                <ul class="nav-bloco-1 mt-5">
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/plus.svg" alt="iconDashboard" width="15" height="14">
+                            <p>Dashboard</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/paginas.svg" alt="iconpaginas" width="15" height="16">
+                            <p>Páginas</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="../../assets/pagamento.svg" alt="iconSifrao" width="15" height="18">
+                            <p>Pagamentos</p>
+                        </a>
+                    </li>
+    
+                </ul>
+                <ul class="nav-bloco-2">
+                    <h5>Integrações</h5>
+                    <li>
+    
+                        <a href="#">
+                            <img src="../../assets/analytics.svg" alt="Analitycs">
+                            Google Analitycs</a>
+                    </li>
+                    <li>
+    
+                        <a href="#">
+                            <img src="../../assets/meta.svg" alt="">
+                            Business Manager</a>
+                    </li>
+                    <li>
+                        <a>
+                            <img src="../../assets/whatsapp.svg" alt="">
+                            WhatsApp</a>
+                    </li>
+                    <li>
+                        <a href="#">
                         <img src="../../assets/email.svg" alt="">
-                        E-mail</a>
-                </li>
-            </ul>
-            <ul class="nav-bloco-3 row">
-                <li>
-                    <a href="#">Minha Conta</a>
-                </li>
-                <li>
-                    <a href="#">Suporte</a>
-                </li>
-                <li>
-                    <a href="#">Sair</a>
-                </li>
-            </ul>
-        </nav>
-        <div class="ld-body col-sm-12 col-md-9 col-lg-10">
+                            E-mail</a>
+                    </li>
+                </ul>
+                <ul class="nav-bloco-3">
+                    <li>
+                        <a href="#">Minha Conta</a>
+                    </li>
+                    <li>
+                        <a href="#">Suporte</a>
+                    </li>
+                    <li>
+                        <a href="#">Sair</a>
+                    </li>
+                </ul>
+            </nav>
+        <div class="ld-body col-sm-12 col-md-12 col-lg-10">
             <div class="header-mobile">
                 <button class="button-mobile" type="button" data-bs-toggle="offcanvas" data-bs-target="#staticBackdrop"
                     aria-controls="staticBackdrop">
                     <img id="button-menu" src="../../assets/justify.svg" alt="">
                 </button>
-
+    
                 <div class="offcanvas offcanvas-start" data-bs-backdrop="static" tabindex="-1" id="staticBackdrop"
                     aria-labelledby="staticBackdropLabel">
                     <div class="offcanvas-header">
@@ -177,48 +93,63 @@
                     </div>
                     <div class="offcanvas-body">
                         <div>
-
-
-                            <div class="nav-bloco-1">
-                                <div>
-                                    <img src="../../assets/iconDashboard.png" alt="iconDashboard" width="15"
-                                        height="14">
-                                    <a>Dashboard</a>
-                                </div>
-                                <div>
-                                    <img src="../../assets/iconpaginas.png" alt="iconpaginas" width="15" height="16">
-                                    <a>Páginas</a>
-                                </div>
-                                <div>
-                                    <img src="../../assets/iconSifrao.png" alt="iconSifrao" width="15" height="18">
-                                    <a>Pagamentos</a>
-                                </div>
-                            </div>
-                            <div class="nav-bloco-2">
+                            <ul class="nav-bloco-1 row">
+                                <li>
+                                    <a href="#">
+                                        <img src="../../assets/plus.svg" alt="iconDashboard" width="15" height="14">
+                                        <p>Dashboard</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../assets/paginas.svg" alt="iconpaginas" width="15" height="16">
+                                        <p>Páginas</p>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <img src="../../assets/pagamento.svg" alt="iconSifrao" width="15" height="18">
+                                        <p>Pagamentos</p>
+                                    </a>
+                                </li>
+                
+                            </ul>
+                            <ul class="nav-bloco-2 row">
                                 <h5>Integrações</h5>
-                                <div>
-                                    <img src="../../assets/ic_analytics 1.png" alt="">
-                                    <a>Google Analitycs</a>
-                                </div>
-                                <div>
-                                    <img src="../../assets/iconMeta.png" alt="">
-                                    <a>Business Manager</a>
-                                </div>
-                                <div>
-                                    <img src="../../assets/iconWhatsApp.png" alt="">
-                                    <a>WhatsApp</a>
-                                </div>
-                                <div>
-                                    <img src="../../assets/iconEmail.png" alt="">
-                                    <a>E-mail</a>
-                                </div>
-                            </div>
-                            <div class="nav-bloco-3">
-                                <a>Minha Conta</a>
-                                <a>Suporte</a>
-                                <a>Sair</a>
-
-                            </div>
+                                <li>
+                
+                                    <a href="#">
+                                        <img src="../../assets/analytics.svg" alt="Analitycs">
+                                        Google Analitycs</a>
+                                </li>
+                                <li>
+                
+                                    <a href="#">
+                                        <img src="../../assets/meta.svg" alt="">
+                                        Business Manager</a>
+                                </li>
+                                <li>
+                                    <a>
+                                        <img src="../../assets/whatsapp.svg" alt="">
+                                        WhatsApp</a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                    <img src="../../assets/email.svg" alt="">
+                                        E-mail</a>
+                                </li>
+                            </ul>
+                            <ul class="nav-bloco-3 row">
+                                <li>
+                                    <a href="#">Minha Conta</a>
+                                </li>
+                                <li>
+                                    <a href="#">Suporte</a>
+                                </li>
+                                <li>
+                                    <a href="#">Sair</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
                 </div>
@@ -226,7 +157,7 @@
                     aria-controls="offcanvasRight"> <img class="img-perfil" src="../../assets/imgHeader.png"
                         alt="imgHeader">
                 </button>
-
+    
                 <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight"
                     aria-labelledby="offcanvasRightLabel">
                     <div class="offcanvas-header">
@@ -265,10 +196,10 @@
                                     <img class="icon-notificacoes" src="../../assets/Notificacoes.svg"
                                         alt="iconNotificacoes" />
                                 </a>
-
+    
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
-
+                                   
                                 </div>
                             </div>
                         </li>
@@ -277,10 +208,10 @@
                                 <a href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     <img class="img-perfil" src="../../assets/imgHeader.png" alt="imgHeader" />
                                 </a>
-
+    
                                 <div class="dropdown-menu">
                                     <a class="dropdown-item" href="#">Action</a>
-
+                                   
                                 </div>
                             </div>
                         </li>
@@ -288,37 +219,40 @@
                 </div>
             </header>
             <main>
-                <h2>Edição de Páginas</h2>
-                <p>Você está no modo de edição de páginas</p>
-                <div class="pagina-editada flex-wrap mt-5">
-                    <div>
-                        <p>Você está editando</p>
-                        <h4>Capsula Advogados</h4>
-                        <p><b>Ativo</b> https://capsula.digital</p>
+                <div class="col-12 edicao-de-paginas">
+                    <h2>Edição de Páginas</h2>
+                    <p>Você está no modo de edição de páginas</p>
+                </div>
+                
+                <div class="pagina-editada flex-wrap mt-5 ">
+                    <div class="mb-3">
+                        <p class="voce-esta-editando">Você está editando</p>
+                        <h4 class="capsula-advogados">Capsula Advogados</h4>
+                        <p class="link-pagina-editada"><b class="ativo me-2">Ativo</b> https://capsula.digital</p>
                     </div>
                     <div class="d-flex align-items-end flex-wrap">
-                        <button class="pagina-editada-button">Cancelar</button>
-                        <button class="pagina-editada-button">Salvar Alterações</button>
-                        <button class="pagina-editada-button-azul">Publicar</button>
+                        <button class="pagina-editada-button mb-3">Cancelar</button>
+                        <button class="pagina-editada-button mb-3">Salvar Alterações</button>
+                        <button class="pagina-editada-button-azul mb-3">Publicar</button>
                     </div>
                 </div>
                 <div class="editar-pagina mt-5 row">
                     <div class="d-flex flex-wrap">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-12">
                             <p><b>Título da Página</b><br>
                                 Esse é o título que será visível para todos</p>
                         </div>
-                        <div class="col-lg-7 ">
-                            <input class="input-text col-lg-12" type="text">
+                        <div class="col-lg-7 col-md-12">
+                            <input class="input-text col-lg-12 col-md-12" type="text">
                         </div>
                     </div>
                     <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-12">
                             <p><b>Favicon</b><br>
                                 Esse é o icone do seu site</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7 ">
+                        <div class="d-flex flex-column col-lg-7 col-md-12">
                             <div class="img-adicionada">
                                 <img src="../../assets/capsula.svg" alt="" width="72px">
                                 <button>
@@ -347,11 +281,11 @@
                         </div>
                     </div>
                     <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                        <div class="col-lg-5 col-md-12">
                             <p><b>Logo do Site</b><br>
                                 Esse é o logo do seu site</p>
                         </div>
-                        <div class="d-flex flex-column col-lg-7 ">
+                        <div class="d-flex flex-column col-lg-7 col-md-12">
                             <img src="" alt="">
                             <div class="d-flex flex-column ">
                                 <div class="img-adicionada">
@@ -384,14 +318,14 @@
                             </div>
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                    <div class="d-flex flex-wrap col-12">
+                        <div class="col-lg-5 col-sm-12">
                             <p><b>Cores</b><br>
                                 Selecione a cor principal e secundária</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7 ">
-                            <div class="color-div    mb-3">
+                        <div class="d-flex flex-column col-lg-7  col-sm-12 col-md-12">
+                            <div class="color-div mb-3">
                                 <input class="input-color" type="color">
                             </div>
                             <div class="color-div ">
@@ -405,14 +339,14 @@
                                 Altere os textos principais</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7 ">
-                            <div class="color-div col-lg-12">
+                        <div class="d-flex flex-column col-lg-7 col-md-12">
+                            <div class="color-div col-lg-12 col-md-12">
                                 <input class="input-color " type="color">
                             </div>
-                            <div class="d-flex flex-column align-items-end mb-5 mt-3">
+                            <div class="d-flex flex-column-reverse align-items-end mb-5  col-md-12 img-banner-exmp-md" >
                                 <img class="img-banner-exmp" class="mt-4" src="../../assets/bannerPrincipalEexmplo.png"
                                     alt="">
-                                <button class="btn-fechar-backgrund mb-2">
+                                <button class="btn-fechar-backgrund">
                                     <img src="../../assets/fechar-img.svg" alt="">
                                 </button>
                             </div>
@@ -436,47 +370,47 @@
                             <input class="input-text " type="text" placeholder="Texto 2">
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                    <div class="d-flex flex-wrap col-12">
+                        <div class="col-lg-5 col-sm-12">
                             <p><b>Formulário</b><br>
                                 Altere os textos do formulário</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7">
+                        <div class="d-flex flex-column col-lg-7 col-sm-12">
                             <input class="input-text mb-3" type="text">
                             <input class="input-text" type="text">
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                    <div class="d-flex flex-wrap col-12 ">
+                        <div class="col-lg-5 col-sm-12">
                             <p><b>Contato</b><br>
                                 Altere as informações de contato</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7">
+                        <div class="d-flex flex-column col-lg-7 col-sm-12">
                             <input class="input-text mb-3" type="text" placeholder="E-mail">
                             <input class="input-text" type="text" placeholder="Telefone">
                         </div>
                     </div>
-                    <div class="d-flex flex-wrap col-lg-12">
-                        <div class="col-lg-5">
+                    <div class="d-flex flex-wrap col-12">
+                        <div class="col-lg-5 col-sm-12">
                             <p><b>WhatsAppContato</b><br>
                                 Insira o link do WhatsApp do seu escritório <br>
                                 que irá receber as mensagens do site</p>
                         </div>
 
-                        <div class="d-flex flex-column col-lg-7">
+                        <div class="d-flex flex-column col-lg-7 col-sm-12">
                             <input class="input-text mb-3" type="text" placeholder="numero WhatsApp">
                             <input class="input-text" type="text">
                         </div>
                     </div>
                     <div class="d-flex flex-column  mb-3">
                         <div class="d-flex flex-row col-lg-12 ">
-                            <div class="col-lg-5">
+                            <div class="col-md-7 col-lg-5">
                                 <p><b>Logo Clientes</b><br>
                                     Envie as logos dos seus clientes ou marcas parceiros</p>
                             </div>
-                            <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-row align-items-end justify-content-end col-md-5 col-lg-7 ">
 
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseLogos"
@@ -534,12 +468,12 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class=" col-lg-5">
+                            <div class="col-sm-7 col-md-7 col-lg-5 ">
                                 <p><b>Pontos de Destaque</b><br>
                                     Adicione pontos de destaque do seu escritório</p>
                             </div>
 
-                            <div class=" d-flex flex-row align-items-end justify-content-end col-lg-7 ">
+                            <div class="col-sm-5 col-md-5 col-lg-7 d-flex flex-row align-items-end justify-content-end">
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse"
                                         data-bs-target="#collapsePontosDestaques" aria-expanded="false"
@@ -576,11 +510,11 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                            <div class="col-sm-7 col-md-7 col-lg-5 ">
                                 <p><b>Destaque</b><br>
                                     Selecione a segunda imagem destaque</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseDestaque"
                                         aria-expanded="false" aria-controls="collapseDestaque">
@@ -593,7 +527,7 @@
                         <div class="collapse" id="collapseDestaque">
                             <div class="d-flex flex-row">
                                 <div class="col-lg-5"></div>
-                                <div class="d-flex flex-column col-lg-7">
+                                <div class="d-flex flex-column col-lg-7 col-md-12">
                                     <div class="d-flex flex-column align-items-end mb-5 mt-4">
                                         <img class="img-background-Destaque-exmp" class="mt-4"
                                             src="../../assets/imgBackgroundDestaque.png" alt="">
@@ -626,11 +560,11 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                            <div class=" col-sm-7 col-md-7 col-lg-5">
                                 <p><b>Sobre</b><br>
                                     Insira informações sobre seu escritório</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7 ">
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseSobre"
                                         aria-expanded="false" aria-controls="collapseSobre">
@@ -640,9 +574,9 @@
                             </div>
                         </div>
                         <div class="collapse" id="collapseSobre">
-                            <div class="d-flex flex-row mt-4">
+                            <div class="d-flex flex-row mt-4 col-12">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column col-sm-12">
                                     <input class="input-text mb-3" type="text">
                                     <input class="input-text mb-3" type="text">
                                     <textarea class="text-area" name="" id="" cols="30" rows="10"></textarea>
@@ -650,11 +584,11 @@
 
                             </div>
                             <div class="d-flex flex-row flex-wrap mt-4">
-                                <div class="col-lg-5">
+                                <div class="col-lg-5 col-sm-12">
                                     <p><b>Vídeo</b><br>
                                         Insira o link do Youtube do seu vídeo</p>
                                 </div>
-                                <div class="col-lg-7">
+                                <div class="col-lg-7 col-sm-12">
                                     <div class="d-flex flex-column">
                                         <input class="input-text" type="text">
                                     </div>
@@ -665,12 +599,12 @@
 
 
                     <div class="d-flex flex-column">
-                        <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                        <div class="d-flex flex-row teste-divs">
+                            <div class="col-sm-7 col-md-7 col-lg-5 ">
                                 <p><b>Time</b><br>
                                     Selecione a segunda imagem destaque</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
 
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse" data-bs-target="#collapseTime"
@@ -682,7 +616,7 @@
                         <div class="collapse" id="collapseTime">
                             <div class="d-flex flex-row">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column col-md-12">
                                     <div class="mt-4 d-flex align-items-start">
 
                                         <img src="../../assets/imgFotoTime.png" alt="">
@@ -805,12 +739,12 @@
                         </div>
                     </div>
                     <div class="d-flex flex-column">
-                        <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                        <div class="d-flex flex-row  ">
+                            <div class="col-sm-7 col-md-7 col-lg-5">
                                 <p><b>Depoimentos</b><br>
                                     Depoimentos de clientes</p>
                             </div>
-                            <div class="d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class="d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse"
                                         data-bs-target="#collapseDepoimentos" aria-expanded="false"
@@ -822,7 +756,7 @@
                         <div class="collapse" id="collapseDepoimentos">
                             <div class="d-flex flex-row">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column col-md-12">
                                     <div class="mt-4 d-flex align-items-start">
 
                                         <img src="../../assets/imgFotoDepoimentos.png" alt="">
@@ -930,11 +864,11 @@
                     </div>
 
                     <div class="d-flex flex-row">
-                        <div class="col-lg-5">
+                        <div class="col-sm-7 col-md-7 col-lg-5">
                             <p><b>Blog</b><br>
                                 Exibição de Blog Oficial</p>
                         </div>
-                        <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                        <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
 
                             <label class="switch">
                                 <input type="checkbox">
@@ -944,11 +878,11 @@
                     </div>
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                            <div class="col-sm-7 col-md-7 col-lg-5">
                                 <p><b>Áreas de Atuação</b><br>
                                     Destaque 03 áreas de atuação</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7 ">
 
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse"
@@ -961,7 +895,7 @@
                         <div class="collapse" id="collapseAreasAtuacao">
                             <div class="d-flex flex-row">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column col-sm-12">
                                     <input class="input-text mt-4" type="text">
                                     <textarea name="" id="" cols="30" rows="10" class="mt-3 mb-3 text-area"></textarea>
                                     <input class="input-text" type="text">
@@ -1041,11 +975,11 @@
 
                     <div class="d-flex flex-column">
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                            <div class="col-sm-7 col-md-7 col-lg-5">
                                 <p><b>Todas Áreas de Atuação</b><br>
                                     Adicione todas áreas de atuação</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
 
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse"
@@ -1058,7 +992,7 @@
                         <div class="collapse" id="collapseTodasAreasAtuacao">
                             <div class="d-flex flex-row mb-4 mt-4">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column col-sm-12">
 
                                     <input class="input-text mb-3" type="text">
                                     <button class="pagina-editada-button-azul-area-atuacao">
@@ -1153,11 +1087,11 @@
                     <div class="d-flex flex-column mb-5">
 
                         <div class="d-flex flex-row">
-                            <div class="col-lg-5">
+                            <div class="col-sm-7 col-md-7 col-lg-5">
                                 <p><b>Destaque Extra Sobre</b><br>
                                     Insira informações sobre seu escritório</p>
                             </div>
-                            <div class=" d-flex flex-column align-items-end justify-content-end col-lg-7 ">
+                            <div class=" d-flex flex-column align-items-end justify-content-end col-sm-5 col-md-5 col-lg-7">
 
                                 <label class="switch">
                                     <input type="checkbox" data-bs-toggle="collapse"
@@ -1171,7 +1105,7 @@
 
                             <div class="row">
                                 <div class="col-lg-5"></div>
-                                <div class="col-lg-7 d-flex flex-column">
+                                <div class="col-lg-7 d-flex flex-column ">
                                     <label class="label-depoimentos mt-4 mb-3" for="">Título Destaque</label>
                                     <input class="input-text  mb-3" type="text" name="" id="">
                                     <textarea class="text-area  mb-3" name="" id="" cols="30" rows="10"
@@ -1182,13 +1116,13 @@
                                 </div>
 
                                 <div class="d-flex flex-wrap">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 col-sm-12">
                                         <p class=" mb-3"><b>Vídeo</b><br>Insira o link do Youtube do seu vídeo</p>
 
                                     </div>
-                                    <div class="col-lg-7">
-                                        <div class=" d-flex">
-                                            <input class="input-text  mb-3" type="text" width="100%">
+                                    <div class="col-lg-7 col-sm-12">
+                                        <div class=" d-flex col-sm-12">
+                                            <input class="input-text col-sm-12  mb-3" type="text" width="100%">
 
                                         </div>
 
@@ -1196,10 +1130,10 @@
 
                                 </div>
                                 <div class="d-flex flex-wrap mt-3">
-                                    <div class="col-lg-5">
+                                    <div class="col-lg-5 col-md-12">
                                         <p><b>Serviço</b><br>Insira o link do Youtube do seu vídeo</p>
                                     </div>
-                                    <div class="col-lg-7">
+                                    <div class="col-lg-7 col-md-12" >
                                         <div>
                                             <div>
                                                 <img src="../../assets/img-mala.svg" alt="">
