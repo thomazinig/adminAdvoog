@@ -450,7 +450,41 @@ line-height: 12.887px; /* 120% */
   outline: none;
   box-shadow: none;
 }
+
+.button-voltar-moblie{
+  display: none;
+}
 @media (max-width: 600px) {
+  .teste{
+    transition: 0.3s ease-in-out;
+
+  }
+  .mensagens-mobile{
+    display: none;
+    transition: 0.3s ease-in-out;
+
+  }
+  .button-voltar-moblie{
+    padding-top: 13px;
+    display: inline;
+    background: none;
+    border: none;
+  }
+  .chat-mobile{
+    display: none;
+    transition: 0.3s ease-in-out;
+  }
+
+  
+  .content {
+    transition: 0.3s ease-in-out;
+    padding: 0 5px 0 5px;
+    
+  }
+  .content:hover{
+    transition: 0.3s ease-in-out;
+    
+  }
   nav {
     display: none;
   }
@@ -517,6 +551,7 @@ line-height: 12.887px; /* 120% */
   main {
     margin-left: 10px;
     padding: 10px;
+    
   }
 
   .ld-body {
